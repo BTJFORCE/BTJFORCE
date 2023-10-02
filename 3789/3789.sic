@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- Created by             : gev
+     Source Control location: 
+     File                   : 3789.sic
+     Created                : 2011-08-23 20:38:09 -->
+
+<!DOCTYPE configs [
+  <!ENTITY FerryPOD2RUDBowThr2 SYSTEM "u:/setup/SoftInstrument/FerryPOD2RUDBowThr2.sic">
+]>
+<configs> <!-- list of configurations -->
+  &FerryPOD2RUDBowThr2;
+</configs>

@@ -1,0 +1,82 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 18 October 2011 At  9:30:17 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+COMBINATOR 11601
+1                   ## COMBINATOR TYPE CODE
+MATHEMATICAL-MODEL-CODE
+800
+  0.000000E+00   0.000000E+00 
+                    ## HANDLE CHANGE: PROPORT. BAND AND MAX RATE (UNITS UNITS/S) 
+ -1.000000E+00   1.000000E+00 
+                    ## HANDLE LIMITS: MIN.  MAX. (UNITS) 
+TABLE-LUMP
+FIXED-PITCH
+  1.000000E+00      ## FIXED PITCH
+## 
+##                                - 5 -
+## ________________________________________________________________________
+## Ship : 3618
+## Danish Maritime Institute
+## 1 August 2011 At 10:00:00 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+BASE-TABLE              <RPM>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <HAND> <S23>                                   EOA
+                        <> <>
+CONTENTS-NAMES          <OU1CM>                                        EOA
+                        <>
+CONTENTS ##-180    60      65      70      75     145     150     180  ## S23 = PUDIS
+	-3.1416	1.0472	1.1345	1.2217	1.3090	2.5307	2.6180	3.1416	EOA
+-1.000	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	
+-0.080	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	
+ 0.080	0.00	0.00	0.00	0.00	0.00	0.00	0.00	0.00	
+ 0.100	0.10	0.10	0.10	0.10	0.10	0.10	0.10	0.10	
+ 0.350	0.40	0.40	0.40	0.40	0.40	0.40	0.40	0.40	
+ 0.675	0.70	0.70	0.70	0.70	0.40	0.40	0.70	0.70	
+ 1.000	1.00	1.00	0.70	0.70	0.40	0.40	1.00	1.00	
+ 1.100	1.00	1.00	0.70	0.70	0.40	0.40	1.00	1.00	
+								       EOA
+KNUCKLE-POINT <HAND> -0.0800  0.0800  0.1000  0.3500  0.6750  1.0000   EOA
+KNUCKLE-POINT <S23>   1.0472  1.1345  1.2217  1.3090  2.5307  2.6180   EOA
+END-TABLE
+#SKIP on
+## -----------------------------------------------------------------------------
+## Multiple RPM-rate (gearbox model #2)
+## REVST (engine revolution status in rad/s) is linked to RCRPM (Load Limit Control)
+## CHLIC is linked to RRNSP (engine RPM rate in rad/s /s)
+## different rates for acceleration and deceleration using TACGB
+## 2011-03-29 GEV
+
+BASE-TABLE              <RPRAT>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <RCRPM>  <TACGB>                               EOA
+                        <rad/s>  <m/s^2>
+CONTENTS-NAMES          <CHLIC>                   		               EOA
+                        <rad/s/s>
+CONTENTS
+	    -100.0000	-0.00100    0.0010   100.0000
+		                                                               EOA
+-162.8 	   1.2000	  1.2000    0.6000	  0.6000	
+ -85.5	   1.2000	  1.2000    1.1000	  1.1000	  	
+  85.5	   1.2000	  1.2000    1.1000	  1.1000   
+ 162.8 	   1.2000	  1.2000    0.6000	  0.6000   	
+EOA					
+KNUCKLE-POINT <RCRPM>					
+-85.5
+ 85.5					
+EOA					
+KNUCKLE-POINT <TACGB>  -0.001   0.001                                   EOA					
+END-TABLE
+## --------------------------------------------------------------------------------
+#SKIP off
+END-LUMP
+END-LUMPS
+END

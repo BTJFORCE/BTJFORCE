@@ -1,0 +1,96 @@
+FILE MSVIEW LGH 1.00
+MATHEMATICAL-MODEL 800
+
+CULTURAL-LIGHT CULTURAL
+
+SIZE  2.0
+
+VISIBILITY 16668.
+NAVIGATION-LIGHT     TOPFORE             MAST-HEAD                                       0.000       57.087       27.751
+NAVIGATION-LIGHT     TOPAFT              MAST-HEAD                                       0.000      -31.515       33.776
+
+VISIBILITY 8334.
+NAVIGATION-LIGHT     AFT                 STERN                WHITE                      0.000      -82.883       13.110
+NAVIGATION-LIGHT     PORT                SIDE                 RED                      -14.138       58.543       17.247
+NAVIGATION-LIGHT     STARBOARD           SIDE                 GREEN                     14.138       58.543       17.247
+SIGNAL-LIGHT         NUC_SB_R1           ALL-ROUND            RED                        0.906      -31.170       29.907
+SIGNAL-LIGHT         NUC_SB_W1           ALL-ROUND            WHITE                      0.906      -31.170       29.002
+SIGNAL-LIGHT         NUC_SB_R2           ALL-ROUND            RED                        0.906      -31.170       27.909
+SIGNAL-LIGHT         NUC_PO_R1           ALL-ROUND            RED                       -0.906      -31.170       29.907
+SIGNAL-LIGHT         NUC_PO_R2           ALL-ROUND            RED                       -0.906      -31.170       29.002
+SIGNAL-LIGHT         NUC_PO_R3           ALL-ROUND            RED                       -0.906      -31.170       27.909
+NAVIGATION-LIGHT     ANCHOR_FORE         ALL-ROUND            WHITE                      0.000       58.419       26.594
+NAVIGATION-LIGHT     ANCHOR_AFT          ALL-ROUND            WHITE                      0.000      -82.883       13.192
+
+VISIBILITY 300.
+SEARCH-LIGHT         MAIN_SEARCH                                                        0.000       64.757       21.229      -20.000        0.000        5.000
+
+VISIBILITY 50.
+DECK-LIGHT           DECK_SB1                                                           6.325       66.187       13.567      -35.000        0.000       70.000
+DECK-LIGHT           DECK_PO1                                                          -6.345       66.089       13.555      -35.000        0.000       70.000
+DECK-LIGHT           DECK_PO2                                                          -7.758      -62.165       12.858     -155.000       30.000       70.000
+DECK-LIGHT           DECK_SB2                                                           7.758      -62.165       12.858     -155.000      -30.000       70.000
+
+SIZE  1.0
+DEFINE-POLE          POLE_SB                                                            0.906      -31.170       28.977
+DEFINE-POLE          POLE_PO                                                           -0.906      -31.170       28.977
+DEFINE-POLE          POLE_FORE                                                          0.000       57.823       26.372
+
+DEFINE-CONDITIONS
+
+
+POWER-DRIVEN
+  STARBOARD
+  PORT
+  AFT
+  TOPFORE
+  TOPAFT
+END
+
+
+NOT-UNDER-COMMAND-NOT-MAKING-WAY
+  NUC_PO_R1
+  NUC_PO_R2  
+END
+NOT-UNDER-COMMAND-MAKING-WAY
+  STARBOARD
+  PORT
+  AFT
+  NOT-UNDER-COMMAND-NOT-MAKING-WAY
+END
+
+RESTRICTED-TO-MANOEUVRE-NOT-MAKING-WAY
+  NUC_SB_R1
+  NUC_SB_W1
+  NUC_SB_R2  
+END
+RESTRICTED-TO-MANOEUVRE-MAKING-WAY
+  POWER-DRIVEN
+  RESTRICTED-TO-MANOEUVRE-NOT-MAKING-WAY
+END
+
+CONSTRAINED-BY-DRAUGHT
+  STARBOARD
+  PORT
+  AFT
+  TOPFORE
+  TOPAFT 
+  NUC_PO_R1
+  NUC_PO_R2
+  NUC_PO_R3  
+END
+
+ANCHORED
+  ANCHOR_FORE
+  ANCHOR_AFT 
+END
+
+TOWED
+  STARBOARD
+  PORT
+  AFT
+END
+
+END-CONDITIONS
+
+END-FILE

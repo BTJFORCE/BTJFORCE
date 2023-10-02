@@ -1,0 +1,25 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:18 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+AUTO-PILOT 11901
+1
+MATHEMATICAL-MODEL-CODE
+800
+COURSE-PILOT
+  1.000000E+00      ## Rudder gain at service speed
+  5.000000E+01      ## Counter rudder time at service speed
+  3.000000E+06      ## Helm time (Integral time) sec.
+  5.00000000000     ## Gyro filter frequency Hz
+  20.000000E+00      ## Auto pilot counter rudder gain dB
+  4.500000E+01      ## Integrator limit deg
+  3.000000E+01      ## Maximum turn rate for cource control deg/min
+  4.500000E+01      ## Maximum command able rudder angle deg
+  3.000000E+00      ## Minimum speed for speed scaling m/s
+  3.000000E+02      ## Look ahead time  Heading command is LAHT ahead
+END

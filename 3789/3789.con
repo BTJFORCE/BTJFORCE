@@ -1,0 +1,71 @@
+[Softpans]
+Version=1.0
+Thrusted=TRUE
+WorkDir=u:\subsys\SoftPan\Ships\Conventional3AziSternProp
+File=combi6.shp
+Titlebar=FALSE
+Origin=0:0
+Size=1024:768
+
+[Serial]
+$IfDef UseSerial
+ Setup=p1:Line1:s19200:8:1:N@WindowsC
+$EndIf
+$IfDef UseFile
+  .Substitute=..\..\common\shp7.dat
+  .Substitute=..\..\4az\Cap3.dat
+  Substitute=..\shortcuts\CruiseMedium.dat
+  Repeat=TRUE
+$EndIf
+
+[Macros]
+Count=14
+H0=inc=.\
+H1=com=..\..\Common\
+H2=bmp=..\..\BMPs\
+H3=Wav=..\..\Wavs\
+H4=env=..\..\Envirs\vorbasse\
+H5=ship=..\..\Ships\
+H6=nmea=..\..\Nmea\
+H7=dec=..\..\Declares\
+H8=upd=..\..\Updating\
+H9=doc=..\..\Docs\
+H10=ClockField=10
+H11=.WaitInitMsg=Msg104:Msg102@%inc%ShipCfg.smf
+H12=vardescr=v:\descr\vardescr\
+H13=ShipNr=3498
+
+[Symbols]
+Count=5
+H0=Hull0
+H1=SHP
+H2=LargeT
+H3=Bow_thr
+H4=AllVariables
+
+[Nmea Selectors]
+Count=2
+H0=shpnum:9001
+H1=shpnum:3181
+
+[Protocol]
+##Source=ANSI
+##Source=NMEA
+Source=MSCint:%vardescr%MsSoftpan.iif:%vardescr%MsSoftpan.iif
+
+[Options]
+;EnclosingRectangle=TRUE
+;ShowRawData=TRUE
+;LoopTiming=TRUE
+;SelfTiming=8:1 ## 8:1=Trigger to Display OK
+;SelfTiming=0:0
+
+[Preferences]
+ExitDoor=FALSE
+Navigation=FALSE
+Zoom=FALSE
+Redraw=FALSE
+;SetupPrompt=TRUE
+PlayMessage=TRUE
+
+[Bagage]

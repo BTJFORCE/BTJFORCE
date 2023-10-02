@@ -1,0 +1,39 @@
+#DISPLAY <$SHIPS/ship3789/link_rudder_propeller.dat    20111220 jko/ka $>
+##
+##LIST ON 
+## ---------------------------------------------------------------------- 
+## Purpose: Create links for variables that are not message variables.
+##          Links to/from message variables are found in ncs_dmi_com.lod
+## 
+## Contains links for: Rudder-propellers (up to six)
+##
+## Latest update: 091130, jko/ka
+##
+## ---------------------------------------------------------------------- 
+##LIST OFF 
+##
+##         1) 1ST and only RUDDER-PROPELLER
+##         =======================================
+##
+#SKIP ON
+FROM DETAILED AUTO-PILOT  GROUP 1 DEVICE 1 NAME RUDDER-ANGLE-COMMAND
+ TO   DETAILED RUDDER-PROP GROUP 1 DEVICE 1 NAME RUDDER-ANGLE-COMMAND
+##
+TO   DETAILED RUDDER-PROP GROUP 1 DEVICE 1 NAME PITCH-COMMAND
+ FROM DETAILED COMBINATOR  GROUP 1 DEVICE 3 NAME PITCH-COMMAND
+##
+TO   DETAILED RUDDER-PROP GROUP 1 DEVICE 1 NAME PITCH-UNIT-COMMAND
+ FROM DETAILED COMBINATOR  GROUP 1 DEVICE 3 NAME PITCH-UNIT-COMMAND
+##
+FROM DETAILED RUDDER-PROP GROUP 1 DEVICE 1 NAME PROP-TORQUE 
+ SUMMA-TO DETAILED ENGINE  GROUP 1 DEVICE 2 NAME TORQUE-LOAD
+##
+TO   DETAILED RUDDER-PROP GROUP 1 DEVICE 1 NAME GEAR-REV-STAT
+ FROM DETAILED ENGINE      GROUP 1 DEVICE 2 NAME REV-STATUS
+##
+TO   DETAILED RUDDER-PROP GROUP 1 DEVICE 1 NAME PITCH-REDUC-C
+ FROM DETAILED ENGINE      GROUP 1 DEVICE 2 NAME LOAD-RED-REQ
+##
+FROM DETAILED RUDDER-PROP GROUP 1 DEVICE 1 NAME PROPELLER-REVOLUTION
+ TO MSM VARIABLE +3 SENGC
+#SKIP OFF

@@ -1,0 +1,33 @@
+## File: %W%
+SHIP 3789 
+<Copenhagen> ## Ship name, max 29 chars.  
+<sh3789>  ## Short name, max 9 chars.  NCS only wants 8 !!
+<FERRY>   ## Ship type, max. chars 19  
+<Service> ## Loading condition, max 19 chars.  
+169.5     ## LOA, m
+156.45    ## Lpp, m
+24.8      ## Beam, m
+5.46      ## Draught fore, m
+5.46      ## Draught aft , m
+12364.0   ## Displacement, m^3
+11.111    ## Service speed m/s
+##
+## Flags: (See also MSM INFMD):
+ 4        ## Ship version code
+ 6        ## DOFs
+ 2        ## #of engines
+ 0  0     ## Types of engines: 0= Diesel, 1=Turbine
+ 3        ## #of propellers
+ 0        ## #of bow rudders
+ 3        ## #of stern rudders
+ 2        ## #of bow thrusters
+ 0        ## #of stern thrusters
+ 2        ## #of bow anchors
+ 0        ## #of stern anchors
+ 8        ## #of mooring lines
+ 0  1  0  ## Propeller types: 0= FP, 1=CP
+ 1   1    ## Thruster types fore (stbd, port): 0=None, 1=Tunnel, 2=Azimuth
+     ## Thruster types aft (stbd, port): 0=None, 1=Tunnel, 2=Azimuth
+ 0        ## 10 * Ice_forces support flag + Icing support flag
+END
+

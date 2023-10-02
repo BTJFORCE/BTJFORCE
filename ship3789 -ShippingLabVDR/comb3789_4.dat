@@ -1,0 +1,46 @@
+## additional combinator to model multiple max/min pod angle as function of speed
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:22 By gev
+## MSdat v. 0.107(HP-UX) FORCE Technology, DMI
+## ________________________________________________________________________
+ 
+COMBINATOR 11604
+1                   ## COMBINATOR TYPE CODE (0=NONE) ?
+MATHEMATICAL-MODEL-CODE
+800
+  0.000000E+00   0.000000E+00 
+                    ## HANDLE CHANGE: PROPORT. BAND AND MAX RATE (UNITS UNITS/S) ?
+ -1.000000E+00   1.000000E+00 
+                    ## HANDLE LIMITS: MIN.  MAX. (UNITS) ?
+TABLE-LUMP
+VARIABLE-PITCH-RPM
+## 
+##                                - 2 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:22 By gev
+## MSdat v. 0.107(HP-UX) FORCE Technology, DMI
+## ________________________________________________________________________
+
+## min pod angle 
+ 
+BASE-TABLE              <MINRU>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <UWGB>                                         EOA
+                        <M/S>   
+CONTENTS-NAMES          <OU2CM>                                        EOA
+                        <DEG>
+CONTENTS
+-25.000   180 ## not limited for neg. speeds since pods are turned 180 deg when sailing astern
+  7.20    180
+  7.21    -45
+ 25.000   -45  
+                                                                       EOA
+KNUCKLE-POINT <UWGB>  7.20    7.21                         	           EOA
+END-TABLE
+END-LUMP
+END-LUMPS
+END

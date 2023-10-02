@@ -1,0 +1,134 @@
+## TAG "Name Of Device" 		## Creates the device
+## 	PARRENT "tag_name_parrent" 	## Inherrit's from Parrent tag (Parrent mud be defigned first).
+##	DISPLAY-NAME "name"		## The name to use ad display.
+## 	TYPE "tpe" 			## This is used to groupe the items. (This must be the same tag as in errorlist.dat)
+## 	CHANGE-RATE rate 		## The rate/sec that the value can change in. (0 => instant)
+## 	WAKEUP-STATE st			## The value to set at startup.
+## END TAG
+
+FILE MonitorControlFile MCF 1.00 
+
+
+##
+## WATER-TIGHT-DOOR's
+##
+
+TAG "T01002"
+	DISPLAY-NAME "WTD - Deck 2, Zone 1, Door 1"
+	TYPE "WATER-TIGHT-DOOR"
+	CHANGE-RATE 0.066
+	WAKEUP-STATE 1
+END-TAG
+
+TAG "T01003"
+	PARRENT "T01002"
+	DISPLAY-NAME "WTD - Deck 2, Zone 1, Door 2"
+END-TAG
+
+TAG "T01004"
+	PARRENT "T01002"
+	DISPLAY-NAME "WTD - Deck 2, Zone 2, Door 1"
+END-TAG
+
+TAG "T01005"
+	PARRENT "T01002"
+	DISPLAY-NAME "WTD - Deck 2, Zone 2, Door 2"
+END-TAG
+
+##
+## SHELL-TIGHT-DOOR's
+##
+
+TAG "T02002"
+	DISPLAY-NAME "SHELL - Starboard door's"
+	TYPE "SHELL-DOOR"
+	CHANGE-RATE 0.06
+	WAKEUP-STATE 0
+END-TAG
+
+TAG "T02003"
+	PARRENT "T02002"
+	DISPLAY-NAME "SHELL - Port door's"
+END-TAG
+
+##
+## Damage Control Units's
+##
+
+TAG "T03001"
+	DISPLAY-NAME "Swimming pool - Valves"
+	TYPE "VALVES"
+	CHANGE-RATE 0.0001
+	WAKEUP-STATE 0
+END-TAG
+
+TAG "T03002"
+	DISPLAY-NAME "Black/Gray Water - Valves"
+	TYPE "VALVES"
+	CHANGE-RATE 0.001
+	WAKEUP-STATE 1
+END-TAG
+
+##
+## FIRE-ALARM's
+##
+
+TAG "T04002"
+	DISPLAY-NAME "M. Galley - Z1"
+	TYPE "FIRE-ALARM"
+	CHANGE-RATE 0
+	WAKEUP-STATE 0
+END-TAG
+
+TAG "T04011"
+	PARRENT "T04002"
+	DISPLAY-NAME "Cabin1 - Z2"
+END-TAG
+
+TAG "T04020"
+	PARRENT "T04002"
+	DISPLAY-NAME "Cabin2 - Z3"
+END-TAG
+
+TAG "T04029"
+	PARRENT "T04002"
+	DISPLAY-NAME "Incinerator - Z4"
+END-TAG
+
+TAG "T04038"
+	PARRENT "T04002"
+	DISPLAY-NAME "M Laundry - Z5"
+END-TAG
+
+##
+## FIRE-DOOR's
+##
+
+TAG "T04055"
+	DISPLAY-NAME "Fire Doors Z1"
+	TYPE "FIRE-DOOR"
+	CHANGE-RATE 0
+	WAKEUP-STATE 0
+END-TAG
+
+TAG "T04056"
+	PARRENT "T04056"
+	DISPLAY-NAME "Fire Doors Z2"
+END-TAG
+
+TAG "T04057"
+	PARRENT "T04056"
+	DISPLAY-NAME "Fire Doors Z3"
+END-TAG
+
+TAG "T04058"
+	PARRENT "T04056"
+	DISPLAY-NAME "Fire Doors Z4"
+END-TAG
+
+TAG "T04059"
+	PARRENT "T04056"
+	DISPLAY-NAME "Fire Doors Z5"
+END-TAG
+
+END-FILE

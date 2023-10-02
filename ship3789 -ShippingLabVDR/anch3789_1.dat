@@ -1,0 +1,121 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:21 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+ANCHOR-FORCE 11001
+3                   ## Anchor type code (eg. 1) ?
+MATHEMATICAL-MODEL-CODE
+801
+  4.257399E-01      ## X position /Lpp 		
+  2.941935E-01      ## Y position /B
+ -5.170330E-01      ## Z position /Tm
+  4.835742E+03      ## Anchor weight (in water  kg) ?
+  3.388708E+00      ## AREA OF ANCHOR IN VERTICAL POSITION (M**2)?
+  1.000000E+00      ## Anchor drag coefficient based on area of anchor ?
+  2.000000E+01      ## Anchor friction coefficient 
+0 10 20 30 40 50 60 70 80 90  EOA
+                    ## Normalized arrival angles (deg)
+  0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00 
+  0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00 
+  0.000000E+00   1.000000E-01   0.000000E+00   0.000000E+00   0.000000E+00 
+  0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00 
+  9.990000E-01   1.000000E+00   2.000000E-01   0.000000E+00   0.000000E+00 
+  0.000000E+00   0.000000E+00   0.000000E+00   0.000000E+00   9.990000E-01 
+  9.990000E-01   1.000100E+00   1.000400E+00   3.000000E-01   0.000000E+00 
+  0.000000E+00   0.000000E+00   0.000000E+00   9.990000E-01   9.990000E-01 
+  1.000100E+00   1.000200E+00   1.000300E+00   1.000800E+00   4.000000E-01 
+  0.000000E+00   0.000000E+00   0.000000E+00   9.990000E-01   1.000100E+00 
+  1.000100E+00   1.000300E+00   1.000700E+00   1.001000E+00   1.002000E+00 
+  5.000000E-01   0.000000E+00   0.000000E+00   9.990000E-01   1.000100E+00 
+  1.000300E+00   1.000500E+00   1.000900E+00   1.001300E+00   1.001400E+00 
+  1.004000E+00   6.000000E-01   0.000000E+00   0.000000E+00   1.000100E+00 
+  1.000300E+00   1.000500E+00   1.001000E+00   1.005300E+00   1.012000E+00 
+  1.015000E+00   1.006000E+00 
+                    ## 
+  7.000000E-01   0.000000E+00   9.990000E-01   1.000300E+00   1.000500E+00 
+  1.002200E+00   1.002300E+00   1.007400E+00   1.014000E+00   1.019000E+00 
+  1.025000E+00   8.000000E-01   0.000000E+00   1.000100E+00   1.009000E+00 
+  1.018100E+00   1.019700E+00   1.020900E+00   1.030600E+00   1.046000E+00 
+  1.050000E+00   1.040000E+00   9.000000E-01   0.000000E+00   1.000800E+00 
+  1.014100E+00   1.023400E+00   1.014600E+00   1.018000E+00   1.021000E+00 
+  1.025000E+00   1.070000E+00   1.070000E+00   1.000000E+00   9.990000E-01 
+  1.002000E+00   1.026900E+00   1.025600E+00   1.026800E+00   1.013000E+00 
+  1.025000E+00   1.040000E+00   1.070000E+00   1.090000E+00   1.500000E+00 
+  1.000000E+00   1.004000E+00   1.037100E+00   1.038700E+00   1.039900E+00 
+  1.020000E+00   1.030000E+00   1.050000E+00   1.080000E+00   1.100000E+00 
+  2.000000E+00   1.010000E+00   1.007000E+00   1.038100E+00   1.048000E+00 
+  1.200000E+00   1.250000E+00   1.040000E+00   1.050000E+00   1.090000E+00 
+  1.200000E+00   4.000000E+02   1.020000E+00   1.030000E+00   1.050000E+00 
+  1.200000E+00   1.300000E+00   1.400000E+00   1.500000E+00   1.600000E+00 
+  1.700000E+00   1.800000E+00  EOA
+                    ## Force     Dragging speed
+  0.000000E+00      ## Chain "elongation fraction" at deploy time
+WINCH-BRAKE-LINE-STOPPER
+701
+1                   ## Winch, brake & line stopper TYPE CODE  ?
+<Test winch 50 kW>  ## AREA OF ANCHOR IN VERTICAL POSITION (M**2)?
+  1.500000E-01      ## Winch maximum speed (m/s)
+  1.000000E-02      ## Winch minimum speed (frac of maximum)
+## 
+##                                - 2 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:21 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+  1.000000E-01   2.000000E-01 
+                    ## Winch change of rolling speed: Prop. band and max.rate (frac.,frac./s)
+  1.962749E+05  ##4      ## Winch maximum power at maximum speed (W)
+  7.360000E-02      ## Winch efficiency when "holding a force" (W/N))
+  5.000000E+05      ## Winch efficiency when "rolling the line" (W/m/s**2)
+  5.000000E-07   1.000000E+12 
+                    ## Prop., integral value for constant tension winch
+  5.000000E+06  ##5      ## Brake maximum holding force (N
+  7.000000E-01      ## Brake reduction factor in holding force when sliding
+  1.000000E-01   2.000000E-01 
+                    ## Brake change of brake effect: Prop. band and max.rate(frac.,frac./s)
+  2.000000E+04      ## Brake specific heat constant (W/C)
+  1.000000E+02      ##  Brake heat dissipation coefficient (W/C)
+  1.500000E+02      ## Brake maximum temperature (deg. Celcius)
+  1.000000E+05      ## Bitter-end maximum holding force (N
+  2.000000E+04      ## Line guidance loss coeficient (N/m/s**2)
+  4.000000E+05      ## Line stopper maximum holding force (N
+  5.000000E-01   1.000000E+00 
+                    ## Prop. band, max. rate (m/s,m/s/s) for loss control in "wild run-out"
+FIXUP
+PANEL-OUTPUT
+-1                  ## 
+FIXUP
+LOG-OUTPUT
+-1                  ## 
+END
+CABLE
+LUMPMA-41
+1                   ## Number of cable part (segments of different material)
+  5.182779E+02   0.000000E+00 
+                    ## Cable length, Cable diameter [m,m
+  6.342011E+02      ## Cable weight in water [N/m
+  8.440000E-01   1.060000E-01 
+                    ## Normal drag coeff., tangential drag coeff. 
+  3.158000E+06      ## Cable break load [N] (only LUMPMA-41
+  1.000000E+00      ## Cable friction coefficient (excl. buttom type)
+50                  ## Number of nodes for this cable part                
+0                   ## Number of extra node forces
+<NONE>              ## Name of sea current profile (in "HAKS")
+0 1 0 1 1 0  EOA    ## Table of depth-, Magnitude-fractions and Relative direction
+NO-FISH
+  1.000000E-03   1.000000E-03   1.000000E-03 
+                    ## Fraction of guessed force used for differential calculation
+20                  ## Max number of iterations
+  1.000000E-02      ## Max acceptable depth error in m. Only if more than one it 
+-15                 ## Min hydrofoil angle (Deg)
+15                  ## Max hydrofoil angle (Deg)
+END-CABLE
+END

@@ -1,0 +1,105 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:22 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+## ----------------- DEVICE GROUP SHIP-PARTICULARS
+#input $SHIPS/ship3789/part3789.dat
+END-SHIP-PARTICULARS
+## ----------------- DEVICE GROUP COMBINATOR
+##input $SHIPS/ship3789/comb3789_1.dat
+##input $SHIPS/ship3789/comb3789_2.dat
+##input $SHIPS/ship3789/comb3789_3.dat
+##input $SHIPS/ship3789/comb3789_4.dat ## limit of pod angle as func. of speed
+##input $SHIPS/ship3789/comb3789_5.dat ## limit of pod angle as func. of speed
+##END-COMBINATOR
+## ----------------- DEVICE GROUP AUTO-PILOT
+#input $SHIPS/ship3789/auto3789.dat
+END-AUTO-PILOT
+## ----------------- DEVICE GROUP ENGINE
+##input $SHIPS/ship3789/engi3789_1.dat
+##input $SHIPS/ship3789/engi3789_2.dat
+##input $SHIPS/ship3789/engi3789_3.dat ## combined engines 1 & 2 into one engine file for tests (IDLE value etc. kept from engine 1)
+##input $SHIPS/ship3789/engi3789_11.dat ## copy of engine 1 but with alterations for tests (5 GEN, only 10 seconds startup per GEN)
+##input $SHIPS/ship3789/engi3789_12.dat ## copy of engine 2 but with alterations for tests (5 GEN, only 10 seconds startup per GEN)
+##END-ENGINE
+##skip on
+## ----------------- DEVICE GROUP RUDDER-PROPELLER
+#input $SHIPS/ship3789/rupr3789_1.dat
+END-RUDDER-PROPELLER
+##skip off
+##skip on
+## ----------------- DEVICE GROUP AZI-PROPELLER
+#input $SHIPS/ship3789/azpr3789_1.dat
+#input $SHIPS/ship3789/azpr3789_2.dat
+END-AZI-PROPELLER
+##skip off
+## ----------------- DEVICE GROUP ACCUMULATOR
+##input $SHIPS/ship3789/accu3789_1.dat
+##END-ACCUMULATOR
+## ----------------- DEVICE GROUP THRUSTER
+#input $SHIPS/ship3789/thrs3789_1.dat
+#input $SHIPS/ship3789/thrs3789_2.dat
+END-THRUSTER
+## ----------------- DEVICE GROUP HULL-FORCE
+#input $SHIPS/ship3789/hull3789.dat
+END-HULL-FORCE
+## ----------------- DEVICE GROUP WIND-FORCE
+#input $SHIPS/ship3789/wind3789.dat
+END-WIND-FORCE
+## ----------------- DEVICE GROUP TUG-FORCE
+#input $SHIPS/ship3789/tugs3789_91.dat
+#input $SHIPS/ship3789/tugs3789_92.dat
+#input $SHIPS/ship3789/tugs3789_93.dat
+#input $SHIPS/ship3789/tugs3789_94.dat
+#input $SHIPS/ship3789/tugs3789_95.dat
+#input $SHIPS/ship3789/tugs3789_96.dat
+END-TUG-FORCE
+## ----------------- DEVICE GROUP HAWSER-FORCE
+#input $SHIPS/ship3789/haws3789_91.dat
+#input $SHIPS/ship3789/haws3789_92.dat
+#input $SHIPS/ship3789/haws3789_93.dat
+#input $SHIPS/ship3789/haws3789_94.dat
+#input $SHIPS/ship3789/haws3789_95.dat
+#input $SHIPS/ship3789/haws3789_96.dat
+#input $SHIPS/ship3789/haws3789_97.dat
+#input $SHIPS/ship3789/haws3789_98.dat
+END-HAWSER-FORCE
+## ----------------- DEVICE GROUP ANCHOR-FORCE
+#input $SHIPS/ship3789/anch3789_1.dat
+#input $SHIPS/ship3789/anch3789_2.dat
+END-ANCHOR-FORCE
+## ----------------- DEVICE GROUP FENDER-FORCE
+#input $SHIPS/ship3789/fend3789_1.dat
+#input $SHIPS/ship3789/fend3789_2.dat
+#input $SHIPS/ship3789/fend3789_3.dat
+END-FENDER-FORCE
+## ----------------- DEVICE GROUP SHIP-TO-SHIP-FORCE
+#input $SHIPS/ship3789/stsi3789.dat
+END-SHIP-TO-SHIP-FORCE
+## ----------------- DEVICE GROUP HULL-MEMORY-FORCES
+#input $SHIPS/ship3789/hlme3789.dat
+END-HULL-MEMORY-FORCES
+## ----------------- DEVICE GROUP WAVE-FORCE
+#input $SHIPS/ship3789/wafo3789.dat
+END-WAVE-FORCE
+## ----------------- DEVICE GROUP HYDROSTATIC-FORCE
+#input $SHIPS/ship3789/hydr3789.dat
+END-HYDROSTATIC-FORCE
+## ----------------- DEVICE GROUP HEEL-TRIM
+#input $SHIPS/ship3789/hltr3789.dat
+END-HEEL-TRIM
+## ----------------- DEVICE GROUP SHORT-BANK
+#input $SHIPS/ship3789/shbr3789.dat
+END-SHORT-BANK
+## ----------------- DEVICE GROUP BODY-FORCE
+#input $SHIPS/ship3789/body3789.dat
+END-BODY-FORCE
+## ----------------- 
+EOD
+## ----- end of file
+

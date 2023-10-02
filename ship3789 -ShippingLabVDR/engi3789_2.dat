@@ -1,0 +1,159 @@
+## 
+##                                - 1 -
+## ____________________________________________________________________
+## Ship : 3789
+## 18 October 2011 At  9:30:17 By gev
+## MSdat v. 0.105(HP-UX)
+## Danish Maritime Institute
+## ____________________________________________________________________
+
+ENGINE 10202
+1                   ## Engine type code (0=no engine) ?
+MATHEMATICAL-MODEL-CODE
+802
+
+    1               ## Number of engines in this device
+
+##eng. 1             
+   6.000000E+02  ## Maximum RPM ?
+   1.350000E+07   ## Eng. int. max. power at MCR (W)
+## Engine 1
+  0.04     0.04     ## Loss fraction ahead
+ -0.04     0.04     ## Loss fraction astern
+
+GEAR-BOX
+  LOSS   
+## Engine 1
+       0.01  0.01  ## Gear box loss ahead
+	  -0.01  0.01  ## Gear box loss astern
+
+## engine 1   
+  RATIO   1       ## Gear box ratio. Set to one, since Propeller has gearbox
+  EOA
+END-GEAR-BOX
+## Engine 1
+  0.1600  0.2333  ## Min. rpm bef. engine stops  max. RPM for reversal (Frac.)
+
+## Engine 1
+  0.0600  0.0334  ## Engine rev change: propt. band and max rate( Frac.,Frac/s
+
+## Engine 1
+  0.1333          ## Max rate windmill control
+
+## Engine 1
+  0.0500          ## Engine overload fraction of qmax before alarm (0.02) ?
+
+## Engine 1
+  0.2000  0.1000  ## Overload rev reduc.: proport. band and max rate (F F/S) ?
+
+## Engine 1
+  0.1250           ## Engine slow down RPM frac. of max
+
+OPTIONS
+IDLE 0.59756     ## Idle revolutions, non-dim with MXREV (~98 rpm - used rpm = zero handle)
+  GENERATOR-BUS
+    5 ## Number of generators on bus
+##    1       2       3       4       5       ## 6 
+     4.5e6   4.5e6   4.5e6   4.5e6   4.5e6   ## 4.5e6 ## Power of generators on bus
+##skip on   ## to be used in UNIX
+     1.6e6    ## Required power for engine start
+     0        ## N.A. (Request for generator start when power is below threshold for prolonged time)
+  POWER-RESIDENCE 1.0e6 ## Power consumption in residential area
+  GENERATOR-SYNCHRONIZATION
+    SYNCHRONIZATION-TIME  45    ## Synchronization time [s]
+    THRESHOLD              0.1  ## Threshold value [frac]
+  END-GENERATOR-SYNCHRONIZATION
+
+## Threshold above which Power Limit Alarm is turned on (frac of avaial. power)
+  POWER-LIMIT-ALARM-THRESHOLD 0.9
+##skip off   ## to be used in UNIX
+
+END-OPTIONS
+
+OPTIMUM-TORQUE-TABLE
+## 
+##                                - 2 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 18 October 2011 At  9:30:17 By gev
+## MSdat v. 0.107(HP-UX) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+BASE-TABLE              <REV-QMAX>
+MULTIPLY                <ETQMX>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <RVNST>                                        EOA
+                        <>
+CONTENTS-NAMES          <OPTQE>                                        EOA
+                        <>
+CONTENTS
+ -1.000000   -1.000000E+00
+ -0.181800   -5.500000E-01
+ -0.009090   -5.000000E-01
+  0.009090    5.000000E-01
+  0.181800    5.500000E-01
+  ##1.000000    1.000000E+00
+  5.000000E-01    6.300000E-01
+  7.200000E-01    8.400000E-01
+  9.000000E-01    1.050000E+00
+  9.500000E-01    1.080000E+00
+  1.000000E+00    1.070000E+00
+  1.100000E+00    1.050000E+00
+                                                                       EOA
+KNUCKLE-POINT <RVNST> -9.090E-03  9.090E-03                            EOA
+END-TABLE
+END-LUMP
+##NO-FUEL-CALCULATION
+##skip on
+FUEL-CALCULATION
+  0.136000          ## Fuel rate kg/hph
+
+## 
+##                                - 3 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 18 October 2011 At  9:30:17 By gev
+## MSdat v. 0.107(HP-UX) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+BASE-TABLE              <FUEL-CONSUMPTION>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <RNREV> <RNQAR>                                EOA
+                        < >     < >
+CONTENTS-NAMES          <SFRC>                                         EOA
+                        <>
+CONTENTS
+          -1.00   0.00   0.25   0.50   0.75   1.00   1.10   2.00
+                                                                       EOA
+ -1.500    1.400  1.400  1.400  1.400  1.400  1.400  1.400  1.400
+ -1.100    1.400  1.400  1.184  1.015  0.991  1.027  1.051  1.400
+ -1.000    1.400  1.400  1.136  0.988  0.976  1.000  1.027  1.400
+ -0.750    1.400  1.400  1.124  0.988  0.973  0.976  0.985  1.400
+ -0.500    1.400  1.400  1.184  1.057  1.020  1.018  1.021  1.400
+ -0.250    1.400  1.400  1.280  1.210  1.184  1.180  1.184  1.400
+  0.000    1.400  1.400  1.400  1.400  1.400  1.400  1.400  1.400
+  0.250    1.400  1.400  1.280  1.210  1.184  1.180  1.184  1.400
+  0.500    1.400  1.400  1.184  1.057  1.020  1.018  1.021  1.400
+  0.750    1.400  1.400  1.124  0.988  0.973  0.976  0.985  1.400
+  1.000    1.400  1.400  1.136  0.988  0.976  1.000  1.027  1.400
+  1.100    1.400  1.400  1.184  1.015  0.991  1.027  1.051  1.400
+  1.500    1.400  1.400  1.400  1.400  1.400  1.400  1.400  1.400
+                                                                       EOA
+KNUCKLE-POINT <RNQAR>  0.000  1.100                                    EOA
+END-TABLE
+END-LUMP
+END-FUEL-CALCULATION
+NO-START-AIR
+## Manual control with GNCO and FGNCO
+## Always at least one generator running
+fixup variable +0 genst 1
+fixup variable +1 genst 0
+fixup variable +2 genst 0
+fixup variable +3 genst 0
+fixup variable +4 genst 0
+## fixup variable +5 genst 0
+## Always all engines running
+fixup variable +0 engst 1
+END

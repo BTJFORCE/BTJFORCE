@@ -1,0 +1,26 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:22 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+HEEL-TRIM 12401
+1                   ## Type code                              
+MATHEMATICAL-MODEL-CODE
+800
+  3.203500E-01      ## Position of starboard and port heel tank
+  3.462000E-02      ## Volume of heel tanks                    
+  1.026000E+03      ## Density of liquid in heel tanks         
+  2.280000E+00      ## Capacity of heel pump                   
+ -4.600000E+00      ## Min. possible deliberate heel           
+  4.600000E+00      ## Max. possible deliberate heel           
+  3.596400E-01      ## Position of fore and aft trim tanks     
+  4.517000E-02      ## Volume of trim tanks                    
+  1.026000E+03      ## Density of liquid in trim tanks         
+  1.270000E+00      ## Capacity of trim pump                   
+ -7.100000E-01      ## Min. possible deliberate trim           
+  7.100000E-01      ## Max. possible deliberate trim           
+END

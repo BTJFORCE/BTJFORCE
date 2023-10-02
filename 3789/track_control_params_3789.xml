@@ -1,0 +1,52 @@
+<pid_controller>
+    <ship_specific>
+	   <max_thrust>1.0</max_thrust>
+	   <max_torque>1.0</max_torque>
+	   <max_rudder_to_use>35.0</max_rudder_to_use>
+	</ship_specific>
+	<proportional_gain>
+
+		<surge_surge>1</surge_surge>
+		<surge_sway>0.0</surge_sway>
+		<surge_yaw>0.0</surge_yaw>
+
+		<sway_surge>0.0</sway_surge>
+		<sway_sway>0.0</sway_sway>
+		<sway_yaw>-0.0005</sway_yaw> 
+
+		<yaw_surge>0.0</yaw_surge>
+		<yaw_sway>0.0</yaw_sway>
+		<yaw_yaw>-1.0</yaw_yaw>
+
+	</proportional_gain>
+	<integral_gain>
+
+		<surge_surge>0.5</surge_surge>
+		<surge_sway>0.0</surge_sway>
+		<surge_yaw>0.0</surge_yaw>
+
+		<sway_surge>0.0</sway_surge>
+		<sway_sway>0.0</sway_sway>
+		<sway_yaw>0.0</sway_yaw>
+
+		<yaw_surge>0.0</yaw_surge>
+		<yaw_sway>0.0</yaw_sway>
+		<yaw_yaw>0.0</yaw_yaw>
+
+	</integral_gain>
+	<derivative_gain>
+
+		<surge_surge>1.0</surge_surge>
+		<surge_sway>0.0</surge_sway>
+		<surge_yaw>0.0</surge_yaw>
+
+		<sway_surge>0.0</sway_surge>
+		<sway_sway>0.0</sway_sway>
+	    <sway_yaw>-0.00</sway_yaw> 
+
+		<yaw_surge>0.0</yaw_surge>
+		<yaw_sway>0.0</yaw_sway>
+		<yaw_yaw>-50.0</yaw_yaw>
+
+	</derivative_gain>
+</pid_controller>

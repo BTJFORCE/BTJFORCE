@@ -1,0 +1,97 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:18 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+COMBINATOR 11603
+1                   ## COMBINATOR TYPE CODE
+MATHEMATICAL-MODEL-CODE
+800
+  0.000000E+00   0.000000E+00 
+                    ## HANDLE CHANGE: PROPORT. BAND AND MAX RATE (UNITS UNITS/S) 
+ -1.000000E+00   1.000000E+00 
+                    ## HANDLE LIMITS: MIN.  MAX. (UNITS) 
+TABLE-LUMP
+VARIABLE-PITCH-RPM
+## 
+##                                - 2 -
+## ________________________________________________________________________
+## Ship : 3576
+## Danish Maritime Institute
+## 26 November 2010 At 14:36:03 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+BASE-TABLE              <PDRPM>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <HAND>                                         EOA
+                        < >
+CONTENTS-NAMES          <OU1CM>                                        EOA
+                        <>
+CONTENTS
+-1.00	1.00000
+-0.97   1.00000
+-0.95	0.92073
+-0.85	0.92073
+-0.70	0.87805
+-0.58	0.80488
+-0.50	0.73780
+-0.40	0.67073
+-0.29	0.59756
+ 0.29	0.59756
+ 0.40	0.67073
+ 0.50	0.73780
+ 0.58	0.80488
+ 0.70	0.87805
+ 0.85	0.92073
+ 0.95	0.92073
+ 0.97   1.00000
+ 1.00	1.00000
+                                                                       EOA
+KNUCKLE-POINT <HAND> -0.97  -0.95  -0.85  -0.70  -0.58  -0.50  -0.40
+       -0.29   0.29   0.40   0.50   0.58   0.70   0.85   0.95   0.97   EOA
+END-TABLE
+## 
+##                                - 3 -
+## ________________________________________________________________________
+## Ship : 3576
+## Danish Maritime Institute
+## 26 November 2010 At 14:36:03 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+BASE-TABLE              <PDRPM>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <HAND>                                         EOA
+                        < >
+CONTENTS-NAMES          <OU2CM>                                        EOA
+                        <>
+CONTENTS
+-1.00 -0.66666
+-0.40 -0.50000
+-0.10 -0.15833
+-0.08  0.00000
+ 0.08  0.00000
+ 0.10  0.15833
+ 0.22  0.18333
+ 0.29  0.25833
+ 0.40  0.35833	
+ 0.50  0.45833
+ 0.58  0.54166
+ 0.70  0.64166
+ 0.85  0.80000
+ 0.95  0.96666
+## 0.97  0.96666
+ 1.00  1.00000
+                                                                       EOA
+KNUCKLE-POINT <HAND>  -0.40  -0.10  -0.08   0.08   0.10   0.22   0.29   
+                       0.40   0.50   0.58   0.70   0.85   0.95   EOA
+END-TABLE
+END-LUMP
+END-LUMPS
+END
+

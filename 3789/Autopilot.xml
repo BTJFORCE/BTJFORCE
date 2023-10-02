@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Autopilot>
+    <controlSystemId>1</controlSystemId>
+    <lineOfSightCircleRadius>750</lineOfSightCircleRadius>
+</Autopilot>

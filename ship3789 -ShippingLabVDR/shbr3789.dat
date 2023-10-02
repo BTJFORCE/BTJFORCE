@@ -1,0 +1,1742 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+SHORT-BANK 12701
+1                   ## Device type code                  
+MATH-MODEL
+801
+  1.000000E+00      ## Factor of mean dr 
+  0.000000E+00      ## nondim arm div by LPP used for calc. of DELTAN (ARM)
+  1.130000E+00      ## Adjusted 
+## 
+##                                - 2 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKY1A>
+MULTIPLY                <FN>                                           EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3>                                          EOA
+                        <>
+CONTENTS-NAMES          <SHYBK>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00    5.930000E+01
+ -8.000000E-01    3.795200E+01
+ -6.000000E-01    2.134800E+01
+ -4.000000E-01    9.488000E+00
+ -2.000000E-01    2.372000E+00
+  0.000000E+00    0.000000E+00
+  2.000000E-01   -2.372000E+00
+  4.000000E-01   -9.488000E+00
+  6.000000E-01   -2.134800E+01
+  8.000000E-01   -3.795200E+01
+  1.000000E+00   -5.930000E+01
+                                                                       EOA
+END-TABLE
+## 
+##                                - 3 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKY1B>
+MULTIPLY                <FN>                                           EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <CBBOT>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SHYBK>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     1.000000E+00     3.700000E+00
+                  5.400000E+00     2.000000E+01                        EOA
+ -1.000000E+00    0.000000E+00    -3.470000E+01    -1.283900E+02
+                 -8.003001E+01    -8.003001E+01
+ -8.000000E-01    0.000000E+00    -2.220800E+01    -8.216960E+01
+                 -5.121630E+01    -5.121630E+01
+ -6.000000E-01    0.000000E+00    -1.249200E+01    -4.622040E+01
+                 -2.880980E+01    -2.880980E+01
+ -4.000000E-01    0.000000E+00    -5.552000E+00    -2.054240E+01
+                 -1.280410E+01    -1.280410E+01
+ -2.000000E-01    0.000000E+00    -1.388000E+00    -5.135600E+00
+                 -3.201000E+00    -3.201000E+00
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+  2.000000E-01    0.000000E+00     1.388000E+00     5.135600E+00
+                  3.201000E+00     3.201000E+00
+  4.000000E-01    0.000000E+00     5.552000E+00     2.054240E+01
+                  1.280410E+01     1.280410E+01
+  6.000000E-01    0.000000E+00     1.249200E+01     4.622040E+01
+                  2.880980E+01     2.880980E+01
+  8.000000E-01    0.000000E+00     2.220800E+01     8.216960E+01
+                  5.121630E+01     5.121630E+01
+  1.000000E+00    0.000000E+00     3.470000E+01     1.283900E+02
+                  8.003001E+01     8.003001E+01
+                                                                       EOA
+KNUCKLE-POINT <CBBOT>  0.000E+00  1.000E+00  3.700E+00  5.400E+00  2.000E+01
+                                                                       EOA
+END-TABLE
+## 
+##                                - 4 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKY2A>
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3>                                          EOA
+                        <>
+CONTENTS-NAMES          <SHYBK>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00   -1.870000E+00
+  0.000000E+00    0.000000E+00
+  1.000000E+00    1.870000E+00
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKY2A> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHYBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       9.000E-01
+  1.000E+01       5.000E-01
+  1.500E+01       3.000E-01
+  2.000E+01       1.000E-01
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 5 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKY2B>
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <CBBOT>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SHYBK>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     1.000000E+00     3.700000E+00
+                  5.400000E+00     2.000000E+01                        EOA
+ -1.000000E+00    0.000000E+00    -3.820000E-01    -1.413400E+00
+                  9.840001E-01     9.840001E-01
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+  1.000000E+00    0.000000E+00     3.820000E-01     1.413400E+00
+                 -9.840001E-01    -9.840001E-01
+                                                                       EOA
+KNUCKLE-POINT <CBBOT>  0.000E+00  1.000E+00  3.700E+00  5.400E+00  2.000E+01
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKY2B> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHYBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       9.000E-01
+  1.000E+01       5.000E-01
+  1.500E+01       3.000E-01
+  2.000E+01       1.000E-01
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 6 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKY3A>
+MULTIPLY                <FN>                                           EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3>                                          EOA
+                        <>
+CONTENTS-NAMES          <SHYBK>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00    8.960001E-01
+  0.000000E+00    0.000000E+00
+  1.000000E+00   -8.960001E-01
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKY3A> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHYBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       9.000E-01
+  1.000E+01       5.000E-01
+  1.500E+01       3.000E-01
+  2.000E+01       1.000E-01
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 7 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKY3B>
+MULTIPLY                <FN>                                           EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <CBBOT>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SHYBK>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     1.000000E+00     3.700000E+00
+                  5.400000E+00     2.000000E+01                        EOA
+ -1.000000E+00    0.000000E+00     3.220000E+00     1.191400E+01
+                  2.942800E+00     2.942800E+00
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+  1.000000E+00    0.000000E+00    -3.220000E+00    -1.191400E+01
+                 -2.942800E+00    -2.942800E+00
+                                                                       EOA
+KNUCKLE-POINT <CBBOT>  0.000E+00  1.000E+00  3.700E+00  5.400E+00  2.000E+01
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKY3B> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHYBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       9.000E-01
+  1.000E+01       5.000E-01
+  1.500E+01       3.000E-01
+  2.000E+01       1.000E-01
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 8 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKY4A>
+MULTIPLY                <DTUCR>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3>                                          EOA
+                        <>
+CONTENTS-NAMES          <SHYBK>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00   -1.450000E-02
+  0.000000E+00    0.000000E+00
+  1.000000E+00    1.450000E-02
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKY4A> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHYBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       8.000E-01
+  1.000E+01       3.000E-01
+  1.500E+01       1.000E-01
+  2.000E+01       5.000E-02
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 9 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKY4B>
+MULTIPLY                <DTUCR>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <CBBOT>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SHYBK>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     1.000000E+00     3.700000E+00
+                  5.400000E+00     2.000000E+01                        EOA
+ -1.000000E+00    0.000000E+00     2.340000E-01     8.658000E-01
+                  2.697000E-01     2.697000E-01
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+  1.000000E+00    0.000000E+00    -2.340000E-01    -8.658000E-01
+                 -2.697000E-01    -2.697000E-01
+                                                                       EOA
+KNUCKLE-POINT <CBBOT>  0.000E+00  1.000E+00  3.700E+00  5.400E+00  2.000E+01
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKY4B> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHYBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       8.000E-01
+  1.000E+01       3.000E-01
+  1.500E+01       1.000E-01
+  2.000E+01       5.000E-02
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 10 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKN1A>
+MULTIPLY                <UWGB>                                         EOA
+DIVIDE                  <ABSUW>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3>                                          EOA
+                        <>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00    1.100000E+00
+ -8.000000E-01    7.040000E-01
+ -6.000000E-01    3.960000E-01
+ -4.000000E-01    1.760000E-01
+ -2.000000E-01    4.400000E-02
+  0.000000E+00    0.000000E+00
+  2.000000E-01   -4.400000E-02
+  4.000000E-01   -1.760000E-01
+  6.000000E-01   -3.960000E-01
+  8.000000E-01   -7.040000E-01
+  1.000000E+00   -1.100000E+00
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKN1A> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHNBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       5.000E-01
+  1.000E+01       3.000E-01
+  1.500E+01       1.000E-01
+  2.000E+01       5.000E-02
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 11 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKN1B>
+MULTIPLY                <UWGB>                                         EOA
+DIVIDE                  <ABSUW>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <CBBOT>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     1.000000E+00     3.700000E+00
+                  4.400000E+00     2.000000E+01                        EOA
+ -1.000000E+00    0.000000E+00    -3.890000E-01    -1.439300E+00
+                 -1.223400E+00    -1.223400E+00
+ -8.000000E-01    0.000000E+00    -2.489600E-01    -9.211501E-01
+                 -7.829801E-01    -7.829801E-01
+ -6.000000E-01    0.000000E+00    -1.400400E-01    -5.181499E-01
+                 -4.404300E-01    -4.404300E-01
+ -4.000000E-01    0.000000E+00    -6.224000E-02    -2.302900E-01
+                 -1.957500E-01    -1.957500E-01
+ -2.000000E-01    0.000000E+00    -1.556000E-02    -5.757200E-02
+                 -4.893600E-02    -4.893600E-02
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+  2.000000E-01    0.000000E+00     1.556000E-02     5.757200E-02
+                  4.893600E-02     4.893600E-02
+  4.000000E-01    0.000000E+00     6.224000E-02     2.302900E-01
+                  1.957500E-01     1.957500E-01
+  6.000000E-01    0.000000E+00     1.400400E-01     5.181499E-01
+                  4.404300E-01     4.404300E-01
+  8.000000E-01    0.000000E+00     2.489600E-01     9.211501E-01
+                  7.829801E-01     7.829801E-01
+  1.000000E+00    0.000000E+00     3.890000E-01     1.439300E+00
+                  1.223400E+00     1.223400E+00
+                                                                       EOA
+KNUCKLE-POINT <CBBOT>  0.000E+00  1.000E+00  3.700E+00  4.400E+00  2.000E+01
+                                                                       EOA
+END-TABLE
+CORRECTION-TABLE         <BNKN1B> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHNBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       5.000E-01
+  1.000E+01       3.000E-01
+  1.500E+01       1.000E-01
+  2.000E+01       5.000E-02
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 12 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKN2A>
+MULTIPLY                <UWGB>                                         EOA
+DIVIDE                  <ABSUW>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3>                                          EOA
+                        <>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00    1.590000E-01
+  0.000000E+00    0.000000E+00
+  1.000000E+00   -1.590000E-01
+                                                                       EOA
+END-TABLE
+CORRECTION-TABLE         <BNKN2A> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHNBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       4.000E-01
+  1.000E+01       1.500E-01
+  1.500E+01       5.000E-02
+  2.000E+01       2.500E-02
+  1.000E+03       5.000E-03
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 13 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKN2B>
+MULTIPLY                <UWGB>                                         EOA
+DIVIDE                  <ABSUW>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <CBBOT>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     1.000000E+00     3.700000E+00
+                  5.400000E+00     2.000000E+01                        EOA
+ -1.000000E+00    0.000000E+00    -1.910000E-02    -7.067000E-02
+                 -7.067000E-02    -7.067000E-02
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+  1.000000E+00    0.000000E+00     1.910000E-02     7.067000E-02
+                  7.067000E-02     7.067000E-02
+                                                                       EOA
+KNUCKLE-POINT <CBBOT>  0.000E+00  1.000E+00  3.700E+00  5.400E+00  2.000E+01
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKN2B> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHNBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       4.000E-01
+  1.000E+01       1.500E-01
+  1.500E+01       5.000E-02
+  2.000E+01       2.500E-02
+  1.000E+03       5.000E-03
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 14 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKN3A>
+MULTIPLY                <UWGB>                                         EOA
+DIVIDE                  <ABSUW>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3>                                          EOA
+                        <>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00   -3.790000E-02
+ -8.000000E-01   -2.425600E-02
+ -7.000000E-01   -1.857100E-02
+ -6.000000E-01   -1.364400E-02
+ -5.000000E-01   -9.475001E-03
+ -4.000000E-01   -6.064000E-03
+ -3.000000E-01   -3.411000E-03
+ -2.000000E-01   -1.516000E-03
+ -1.000000E-01   -3.790000E-04
+  0.000000E+00    0.000000E+00
+  1.000000E-01    3.790000E-04
+  2.000000E-01    1.516000E-03
+  3.000000E-01    3.411000E-03
+  4.000000E-01    6.064000E-03
+  5.000000E-01    9.475001E-03
+  6.000000E-01    1.364400E-02
+  7.000000E-01    1.857100E-02
+  8.000000E-01    2.425600E-02
+  1.000000E+00    3.790000E-02
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKN3A> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHNBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       4.000E-01
+  1.000E+01       1.500E-01
+  1.500E+01       5.000E-02
+  2.000E+01       2.500E-02
+  1.000E+03       5.000E-03
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 15 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKN3B>
+MULTIPLY                <UWGB>                                         EOA
+DIVIDE                  <ABSUW>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <CBBOT>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     1.000000E+00     3.700000E+00
+                  2.000000E+01                                         EOA
+ -1.000000E+00    0.000000E+00     4.130000E-02     1.528100E-01
+                  1.528100E-01
+ -8.000000E-01    0.000000E+00     2.643200E-02     9.779841E-02
+                  9.779841E-02
+ -6.000000E-01    0.000000E+00     1.486800E-02     5.501160E-02
+                  5.501160E-02
+ -4.000000E-01    0.000000E+00     6.608000E-03     2.444960E-02
+                  2.444960E-02
+ -2.000000E-01    0.000000E+00     1.652000E-03     6.112400E-03
+                  6.112400E-03
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00
+  2.000000E-01    0.000000E+00    -1.652000E-03    -6.112400E-03
+                 -6.112400E-03
+  4.000000E-01    0.000000E+00    -6.608000E-03    -2.444960E-02
+                 -2.444960E-02
+  6.000000E-01    0.000000E+00    -1.486800E-02    -5.501160E-02
+                 -5.501160E-02
+  8.000000E-01    0.000000E+00    -2.643200E-02    -9.779841E-02
+                 -9.779841E-02
+  1.000000E+00    0.000000E+00    -4.130000E-02    -1.528100E-01
+                 -1.528100E-01
+                                                                       EOA
+KNUCKLE-POINT <CBBOT>  0.000E+00  1.000E+00  3.700E+00  2.000E+01      EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKN3B> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHNBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       4.000E-01
+  1.000E+01       1.500E-01
+  1.500E+01       5.000E-02
+  2.000E+01       2.500E-02
+  1.000E+03       5.000E-03
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 16 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKN4A>
+MULTIPLY                <UWGB>                                         EOA
+DIVIDE                  <ABSUW>                                        EOA
+MULTIPLY                <FN>                                           EOA
+MULTIPLY                <FN>                                           EOA
+MULTIPLY                <DTUCR>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3>                                          EOA
+                        <>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00    4.210000E+00
+  0.000000E+00    0.000000E+00
+  1.000000E+00   -4.210000E+00
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKN4A> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHNBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       4.000E-01
+  1.000E+01       1.500E-01
+  1.500E+01       5.000E-02
+  2.000E+01       2.500E-02
+  1.000E+03       5.000E-03
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 17 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNKN4B>
+MULTIPLY                <UWGB>                                         EOA
+DIVIDE                  <ABSUW>                                        EOA
+MULTIPLY                <FN>                                           EOA
+MULTIPLY                <FN>                                           EOA
+MULTIPLY                <DTUCR>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <CBBOT>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     1.000000E+00     3.700000E+00
+                  5.400000E+00     2.000000E+01                        EOA
+ -1.000000E+00    0.000000E+00     1.690000E+00     6.253000E+00
+                  6.253000E+00     6.253000E+00
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+  1.000000E+00    0.000000E+00    -1.690000E+00    -6.253000E+00
+                 -6.253000E+00    -6.253000E+00
+                                                                       EOA
+KNUCKLE-POINT <CBBOT>  0.000E+00  1.000E+00  3.700E+00  5.400E+00  2.000E+01
+                                                                       EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNKN4B> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <SHNBK>                                       EOA
+                         < >
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       4.000E-01
+  1.000E+01       1.500E-01
+  1.500E+01       5.000E-02
+  2.000E+01       2.500E-02
+  1.000E+03       5.000E-03
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 18 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <DELTNANGL>
+MULTIPLY                <SHYBK>                                        EOA
+MULTIPLY                <ARM>                                          EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <SHANG>                                        EOA
+                        <DEG>
+CONTENTS-NAMES          <SHNBK>                                        EOA
+                        <>
+CONTENTS
+ -1.800000E+02    0.000000E+00
+ -1.775000E+02    8.000000E-01
+ -1.700000E+02    8.000000E-01
+ -1.350000E+02    1.000000E+00
+ -9.000000E+01    0.000000E+00
+ -4.500000E+01   -1.000000E+00
+ -1.000000E+01   -8.000000E-01
+ -2.500000E+00   -8.000000E-01
+  0.000000E+00    0.000000E+00
+  2.500000E+00    8.000000E-01
+  1.000000E+01    8.000000E-01
+  4.500000E+01    1.000000E+00
+  9.000000E+01    0.000000E+00
+  1.350000E+02   -1.000000E+00
+  1.700000E+02   -8.000000E-01
+  1.775000E+02   -8.000000E-01
+  1.800000E+02    0.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <SHANG> -1.800E+02 -1.700E+02 -1.350E+02 -9.000E+01 -4.500E+01
+                      -1.000E+01 -2.500E+00  0.000E+00  2.500E+00  1.000E+01
+                       4.500E+01  9.000E+01  1.350E+02  1.700E+02  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 19 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <INFUFY1>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <DISF1> <ANGST>                                EOA
+                        <>  <DEG>
+CONTENTS-NAMES          <FOY>                                          EOA
+                        <>
+CONTENTS
+                 -1.800000E+02    -7.000000E+01     0.000000E+00
+                  7.000000E+01     1.800000E+02                        EOA
+ -1.300000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+ -8.900001E-01    1.000000E-02     1.000000E-02     0.000000E+00
+                  1.000000E-02     1.000000E-02
+ -4.000000E-01    3.000000E-01     3.000000E-01     0.000000E+00
+                  3.000000E-01     3.000000E-01
+ -1.900000E-01    3.000000E-01     3.000000E-01     2.600000E-01
+                  3.000000E-01     3.000000E-01
+ -1.300000E-01    1.500000E-01     1.500000E-01     3.375000E-01
+                  1.500000E-01     1.500000E-01
+ -1.000000E-02    2.000000E-02     2.000000E-02     4.875000E-01
+                  2.000000E-02     2.000000E-02
+  0.000000E+00    2.000000E-02     2.000000E-02     5.000000E-01
+                  2.000000E-02     2.000000E-02
+  6.000000E-02    7.000000E-02     7.000000E-02     5.750000E-01
+                  7.000000E-02     7.000000E-02
+  1.000000E-01    1.200000E-01     1.200000E-01     6.250000E-01
+                  1.200000E-01     1.200000E-01
+  2.800000E-01    6.800000E-01     6.800000E-01     8.500001E-01
+                  6.800000E-01     6.800000E-01
+  4.000000E-01    8.000000E-01     8.000000E-01     1.000000E+00
+                  8.000000E-01     8.000000E-01
+  6.900000E-01    1.070000E+00     1.070000E+00     1.000000E+00
+                  1.070000E+00     1.070000E+00
+  1.020000E+00    1.070000E+00     1.070000E+00     1.000000E+00
+                  1.070000E+00     1.070000E+00
+  1.110000E+00    1.060000E+00     1.060000E+00     1.000000E+00
+                  1.060000E+00     1.060000E+00
+  1.240000E+00    1.030000E+00     1.030000E+00     1.000000E+00
+                  1.030000E+00     1.030000E+00
+  1.310000E+00    1.020000E+00     1.020000E+00     1.000000E+00
+                  1.020000E+00     1.020000E+00
+  1.340000E+00    1.010000E+00     1.010000E+00     1.000000E+00
+                  1.010000E+00     1.010000E+00
+  1.400000E+00    1.000000E+00     1.000000E+00     1.000000E+00
+                  1.000000E+00     1.000000E+00
+  2.000000E+00    1.000000E+00     1.000000E+00     1.000000E+00
+                  1.000000E+00     1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <DISF1> -1.300E+00 -4.000E-01 -1.900E-01 -1.300E-01
+                      -1.000E-02  0.000E+00  6.000E-02  1.000E-01  2.800E-01
+                       4.000E-01  6.900E-01  1.020E+00  1.110E+00  1.240E+00
+                       1.310E+00  1.340E+00  2.000E+00                 EOA
+KNUCKLE-POINT <ANGST> -1.800E+02 -7.000E+01  0.000E+00  7.000E+01  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 20 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <INFUFY2>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <DISF2> <ANGEN>                                EOA
+                        <>  <DEG>
+CONTENTS-NAMES          <FOY>                                          EOA
+                        <>
+CONTENTS
+                 -1.800000E+02    -7.000000E+01     0.000000E+00
+                  7.000000E+01     1.800000E+02                        EOA
+ -1.400000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+ -1.300000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+ -8.700000E-01    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+ -7.800000E-01    2.000000E-02     2.000000E-02     0.000000E+00
+                  2.000000E-02     2.000000E-02
+ -4.000000E-01    1.500000E-01     1.500000E-01     0.000000E+00
+                  1.500000E-01     1.500000E-01
+ -2.900000E-01    1.700000E-01     1.700000E-01    -1.375000E-01
+                  1.700000E-01     1.700000E-01
+ -2.000000E-01    8.000000E-02     8.000000E-02    -2.500000E-01
+                  8.000000E-02     8.000000E-02
+ -2.000000E-02   -5.700000E-01    -5.700000E-01    -4.750000E-01
+                 -5.700000E-01    -5.700000E-01
+  0.000000E+00   -5.800000E-01    -5.800000E-01    -5.000000E-01
+                 -5.800000E-01    -5.800000E-01
+  2.800000E-01   -8.700000E-01    -8.700000E-01    -8.500001E-01
+                 -8.700000E-01    -8.700000E-01
+  4.000000E-01   -9.000000E-01    -9.000000E-01    -1.000000E+00
+                 -9.000000E-01    -9.000000E-01
+  6.800000E-01   -9.600000E-01    -9.600000E-01    -1.000000E+00
+                 -9.600000E-01    -9.600000E-01
+  1.000000E+00   -1.000000E+00    -1.000000E+00    -1.000000E+00
+                 -1.000000E+00    -1.000000E+00
+  2.000000E+00   -1.000000E+00    -1.000000E+00    -1.000000E+00
+                 -1.000000E+00    -1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <DISF2> -1.400E+00 -1.300E+00 -8.700E-01 -7.800E-01 -4.000E-01
+                      -2.900E-01 -2.000E-01 -2.000E-02  0.000E+00  2.800E-01
+                       4.000E-01  6.800E-01  1.000E+00  2.000E+00      EOA
+KNUCKLE-POINT <ANGEN> -1.800E+02 -7.000E+01  0.000E+00  7.000E+01  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 21 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <INFUFN1>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <DISF1> <ANGST>                                EOA
+                        <>  <DEG>
+CONTENTS-NAMES          <FON>                                          EOA
+                        <>
+CONTENTS
+                 -1.800000E+02    -7.000000E+01     0.000000E+00
+                  7.000000E+01     1.800000E+02                        EOA
+ -1.300000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+ -8.800001E-01   -1.000000E-02    -1.000000E-02     0.000000E+00
+                 -1.000000E-02    -1.000000E-02
+ -7.600000E-01   -2.000000E-02    -2.000000E-02     0.000000E+00
+                 -2.000000E-02    -2.000000E-02
+ -6.900000E-01   -3.000000E-02    -3.000000E-02     0.000000E+00
+                 -3.000000E-02    -3.000000E-02
+ -4.600000E-01   -7.000000E-02    -7.000000E-02     0.000000E+00
+                 -7.000000E-02    -7.000000E-02
+ -4.000000E-01   -8.500000E-02    -8.500000E-02     0.000000E+00
+                 -8.500000E-02    -8.500000E-02
+ -3.800000E-01   -9.000000E-02    -9.000000E-02     2.500000E-02
+                 -9.000000E-02    -9.000000E-02
+ -3.600000E-01   -8.000000E-02    -8.000000E-02     5.000000E-02
+                 -8.000000E-02    -8.000000E-02
+ -2.100000E-01    0.000000E+00     0.000000E+00     2.375000E-01
+                  0.000000E+00     0.000000E+00
+ -1.300000E-01    1.500000E-01     1.500000E-01     3.375000E-01
+                  1.500000E-01     1.500000E-01
+  0.000000E+00    3.900000E-01     3.900000E-01     5.000000E-01
+                  3.900000E-01     3.900000E-01
+  5.000000E-02    6.400000E-01     6.400000E-01     5.625000E-01
+                  6.400000E-01     6.400000E-01
+  1.000000E-01    7.800000E-01     7.800000E-01     6.250000E-01
+                  7.800000E-01     7.800000E-01
+  2.900000E-01    1.160000E+00     1.160000E+00     8.625000E-01
+                  1.160000E+00     1.160000E+00
+  4.000000E-01    1.250000E+00     1.250000E+00     1.000000E+00
+                  1.250000E+00     1.250000E+00
+  6.800000E-01    1.450000E+00     1.450000E+00     1.000000E+00
+                  1.450000E+00     1.450000E+00
+  7.000000E-01    1.450000E+00     1.450000E+00     1.000000E+00
+                  1.450000E+00     1.450000E+00
+  7.500000E-01    1.430000E+00     1.430000E+00     1.000000E+00
+                  1.430000E+00     1.430000E+00
+  1.470000E+00    9.800001E-01     9.800001E-01     1.000000E+00
+                  9.800001E-01     9.800001E-01
+  2.000000E+00    1.000000E+00     1.000000E+00     1.000000E+00
+                  1.000000E+00     1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <DISF1> -1.300E+00 -7.600E-01 -6.900E-01 -4.600E-01
+                      -4.000E-01 -3.800E-01 -3.600E-01 -2.100E-01 -1.300E-01
+                       0.000E+00  5.000E-02  1.000E-01  2.900E-01  4.000E-01
+                       6.800E-01  7.000E-01  7.500E-01  1.470E+00  2.000E+00
+                                                                       EOA
+KNUCKLE-POINT <ANGST> -1.800E+02 -7.000E+01  0.000E+00  7.000E+01  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 22 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <INFUFN2>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <DISF2> <ANGEN>                                EOA
+                        <>  <DEG>
+CONTENTS-NAMES          <FON>                                          EOA
+                        <>
+CONTENTS
+                 -1.800000E+02    -7.000000E+01     0.000000E+00
+                  7.000000E+01     1.800000E+02                        EOA
+ -1.300000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00
+ -8.700000E-01   -2.000000E-02    -2.000000E-02     0.000000E+00
+                 -2.000000E-02    -2.000000E-02
+ -6.000000E-01   -3.000000E-01    -3.000000E-01     0.000000E+00
+                 -3.000000E-01    -3.000000E-01
+ -4.000000E-01   -3.000000E-01    -3.000000E-01     0.000000E+00
+                 -3.000000E-01    -3.000000E-01
+ -3.100000E-01   -4.000000E-02    -4.000000E-02    -1.125000E-01
+                 -4.000000E-02    -4.000000E-02
+ -2.900000E-01    0.000000E+00     0.000000E+00    -1.375000E-01
+                  0.000000E+00     0.000000E+00
+ -1.000000E-02    2.700000E-01     2.700000E-01    -4.875000E-01
+                  2.700000E-01     2.700000E-01
+  0.000000E+00    2.700000E-01     2.700000E-01    -5.000000E-01
+                  2.700000E-01     2.700000E-01
+  2.900000E-01   -3.900000E-01    -3.900000E-01    -8.625000E-01
+                 -3.900000E-01    -3.900000E-01
+  4.000000E-01   -4.800000E-01    -4.800000E-01    -1.000000E+00
+                 -4.800000E-01    -4.800000E-01
+  7.500000E-01   -6.900000E-01    -6.900000E-01    -1.000000E+00
+                 -6.900000E-01    -6.900000E-01
+  1.460000E+00   -9.700001E-01    -9.700001E-01    -1.000000E+00
+                 -9.700001E-01    -9.700001E-01
+  2.000000E+00   -1.000000E+00    -1.000000E+00    -1.000000E+00
+                 -1.000000E+00    -1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <DISF2> -1.300E+00 -8.700E-01 -6.000E-01 -4.000E-01 -3.100E-01
+                      -2.900E-01 -1.000E-02  0.000E+00  2.900E-01  4.000E-01
+                       7.500E-01  1.460E+00  2.000E+00                 EOA
+KNUCKLE-POINT <ANGEN> -1.800E+02 -7.000E+01  0.000E+00  7.000E+01  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 23 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNK-PROP-Y1>
+MULTIPLY                <FOY>                                          EOA
+MULTIPLY                <PRTH1>                                        EOA
+MULTIPLY                <BBLCK>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <PLAB1>                                  EOA
+                        <>  <DEG>
+CONTENTS-NAMES          <CYSBK>                                        EOA
+                        <N>
+CONTENTS
+                 -9.000000E+01     0.000000E+00     1.039000E+01
+                  1.532000E+01     1.824000E+01     1.973000E+01
+                  1.991000E+01     2.300000E+01     9.000000E+01       EOA
+ -1.000000E+00    0.000000E+00     0.000000E+00    -1.300000E+00
+                 -6.800000E-01    -2.400000E-01    -2.000000E-01
+                 -1.600000E-01    -1.000000E-01     0.000000E+00
+ -6.300000E-01    0.000000E+00     0.000000E+00    -1.300000E+00
+                 -6.800000E-01    -2.400000E-01    -1.600000E-01
+                 -1.500000E-01    -9.000000E-02     0.000000E+00
+ -3.000000E-01    0.000000E+00     0.000000E+00    -1.300000E+00
+                 -6.800000E-01    -2.400000E-01    -1.300000E-01
+                 -1.100000E-01    -8.000000E-02     0.000000E+00
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00     0.000000E+00
+  3.000000E-01    0.000000E+00     0.000000E+00     1.300000E+00
+                  6.800000E-01     2.400000E-01     1.300000E-01
+                  1.100000E-01     8.000000E-02     0.000000E+00
+  6.300000E-01    0.000000E+00     0.000000E+00     1.300000E+00
+                  6.800000E-01     2.400000E-01     1.600000E-01
+                  1.500000E-01     9.000000E-02     0.000000E+00
+  1.000000E+00    0.000000E+00     0.000000E+00     1.300000E+00
+                  6.800000E-01     2.400000E-01     2.000000E-01
+                  1.600000E-01     1.000000E-01     0.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <YB3> -1.000E+00 -6.300E-01 -3.000E-01  0.000E+00  3.000E-01
+                     6.300E-01  1.000E+00                              EOA
+KNUCKLE-POINT <PLAB1> -9.000E+01  0.000E+00  1.039E+01  1.532E+01  1.824E+01
+                       1.973E+01  1.991E+01  2.300E+01  9.000E+01      EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNK-PROP-Y1> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <CYSBK>                                       EOA
+                         <N>
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       9.000E-01
+  1.000E+01       5.000E-01
+  1.500E+01       3.000E-01
+  2.000E+01       1.000E-01
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 24 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <BNK-PROP-Y1>
+INDEPENDENT-VARIABLE    <SHANG>                                        EOA
+                        <DEG>
+CONTENTS-NAMES          <CYSBK>                                        EOA
+                        <N>
+CONTENTS
+ -1.800000E+02    1.000000E+00
+ -1.500000E+02    1.000000E+00
+ -1.350000E+02    0.000000E+00
+ -4.500000E+01    0.000000E+00
+ -3.000000E+01    1.000000E+00
+  3.000000E+01    1.000000E+00
+  4.500000E+01    0.000000E+00
+  1.350000E+02    0.000000E+00
+  1.500000E+02    1.000000E+00
+  1.800000E+02    1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <SHANG> -1.800E+02 -1.500E+02 -1.350E+02 -4.500E+01 -3.000E+01
+                       3.000E+01  4.500E+01  1.350E+02  1.500E+02  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 25 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <BNK-PROP-Y1>
+INDEPENDENT-VARIABLE    <WDBD>                                         EOA
+                        <>
+CONTENTS-NAMES          <CYSBK>                                        EOA
+                        <N>
+CONTENTS
+ -1.000010E+01    0.000000E+00
+ -2.000000E+00    1.353353E-01
+ -1.800000E+00    1.652989E-01
+ -1.600000E+00    2.018965E-01
+ -1.400000E+00    2.465970E-01
+ -1.200000E+00    3.011942E-01
+ -1.000000E+00    3.678794E-01
+ -8.000000E-01    4.493290E-01
+ -6.000000E-01    5.488116E-01
+ -4.000000E-01    6.703200E-01
+ -2.000000E-01    8.187308E-01
+  0.000000E+00    1.000000E+00
+                                                                       EOA
+END-TABLE
+## 
+##                                - 26 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNK-PROP-N1>
+MULTIPLY                <FON>                                          EOA
+MULTIPLY                <PRTH1>                                        EOA
+MULTIPLY                <LPP>                                          EOA
+MULTIPLY                <BBLCK>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <PLAB1>                                  EOA
+                        <>  <DEG>
+CONTENTS-NAMES          <CNSBK>                                        EOA
+                        <Nm>
+CONTENTS
+                 -9.000000E+01     0.000000E+00     1.039000E+01
+                  1.532000E+01     1.824000E+01     1.973000E+01
+                  1.991000E+01     2.300000E+01     9.000000E+01       EOA
+ -1.000000E+00    0.000000E+00     0.000000E+00     2.800000E-01
+                  9.600000E-02     6.000000E-02     3.600000E-02
+                  3.300000E-02     9.200001E-03     0.000000E+00
+ -6.300000E-01    0.000000E+00     0.000000E+00     2.600000E-01
+                  8.400000E-02     4.700000E-02     2.800000E-02
+                  2.400000E-02     9.200001E-03     0.000000E+00
+ -3.000000E-01    0.000000E+00     0.000000E+00     1.100000E-01
+                  6.800001E-02     0.000000E+00     0.000000E+00
+                  2.300000E-03     9.200001E-03     0.000000E+00
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00     0.000000E+00
+  3.000000E-01    0.000000E+00     0.000000E+00    -1.100000E-01
+                 -6.800001E-02     0.000000E+00     0.000000E+00
+                 -2.300000E-03    -9.200001E-03     0.000000E+00
+  6.300000E-01    0.000000E+00     0.000000E+00    -2.600000E-01
+                 -8.400000E-02    -4.700000E-02    -2.800000E-02
+                 -2.400000E-02    -9.200001E-03     0.000000E+00
+  1.000000E+00    0.000000E+00     0.000000E+00    -2.800000E-01
+                 -9.600000E-02    -6.000000E-02    -3.600000E-02
+                 -3.300000E-02    -9.200001E-03     0.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <YB3> -1.000E+00 -6.300E-01 -3.000E-01  0.000E+00  3.000E-01
+                     6.300E-01  1.000E+00                              EOA
+KNUCKLE-POINT <PLAB1> -9.000E+01  0.000E+00  1.039E+01  1.532E+01  1.824E+01
+                       1.973E+01  1.991E+01  2.300E+01  9.000E+01      EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNK-PROP-N1> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <CNSBK>                                       EOA
+                         <N>
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       5.000E-01
+  1.000E+01       3.000E-01
+  1.500E+01       1.000E-01
+  2.000E+01       5.000E-02
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 27 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <BNK-PROP-N1>
+INDEPENDENT-VARIABLE    <SHANG>                                        EOA
+                        <DEG>
+CONTENTS-NAMES          <CNSBK>                                        EOA
+                        <Nm>
+CONTENTS
+ -1.800000E+02    1.000000E+00
+ -1.500000E+02    1.000000E+00
+ -1.350000E+02    0.000000E+00
+ -4.500000E+01    0.000000E+00
+ -3.000000E+01    1.000000E+00
+  3.000000E+01    1.000000E+00
+  4.500000E+01    0.000000E+00
+  1.350000E+02    0.000000E+00
+  1.500000E+02    1.000000E+00
+  1.800000E+02    1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <SHANG> -1.800E+02 -1.500E+02 -1.350E+02 -4.500E+01 -3.000E+01
+                       3.000E+01  4.500E+01  1.350E+02  1.500E+02  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 28 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <BNK-PROP-N1>
+INDEPENDENT-VARIABLE    <WDBD>                                         EOA
+                        <>
+CONTENTS-NAMES          <CNSBK>                                        EOA
+                        <Nm>
+CONTENTS
+ -1.000010E+01    0.000000E+00
+ -2.000000E+00    1.353353E-01
+ -1.800000E+00    1.652989E-01
+ -1.600000E+00    2.018965E-01
+ -1.400000E+00    2.465970E-01
+ -1.200000E+00    3.011942E-01
+ -1.000000E+00    3.678794E-01
+ -8.000000E-01    4.493290E-01
+ -6.000000E-01    5.488116E-01
+ -4.000000E-01    6.703200E-01
+ -2.000000E-01    8.187308E-01
+  0.000000E+00    1.000000E+00
+                                                                       EOA
+END-TABLE
+## 
+##                                - 29 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNK-PROP-Y2>
+MULTIPLY                <FOY>                                          EOA
+MULTIPLY                <PRTH2>                                        EOA
+MULTIPLY                <BBLCK>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <PLAB2>                                  EOA
+                        <>  <DEG>
+CONTENTS-NAMES          <CYSBK>                                        EOA
+                        <N>
+CONTENTS
+                 -9.000000E+01     0.000000E+00     1.039000E+01
+                  1.532000E+01     1.824000E+01     1.973000E+01
+                  1.991000E+01     2.300000E+01     9.000000E+01       EOA
+ -1.000000E+00    0.000000E+00     0.000000E+00    -1.300000E+00
+                 -6.800000E-01    -2.400000E-01    -2.000000E-01
+                 -1.600000E-01    -1.000000E-01     0.000000E+00
+ -6.300000E-01    0.000000E+00     0.000000E+00    -1.300000E+00
+                 -6.800000E-01    -2.400000E-01    -1.600000E-01
+                 -1.500000E-01    -9.000000E-02     0.000000E+00
+ -3.000000E-01    0.000000E+00     0.000000E+00    -1.300000E+00
+                 -6.800000E-01    -2.400000E-01    -1.300000E-01
+                 -1.100000E-01    -8.000000E-02     0.000000E+00
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00     0.000000E+00
+  3.000000E-01    0.000000E+00     0.000000E+00     1.300000E+00
+                  6.800000E-01     2.400000E-01     1.300000E-01
+                  1.100000E-01     8.000000E-02     0.000000E+00
+  6.300000E-01    0.000000E+00     0.000000E+00     1.300000E+00
+                  6.800000E-01     2.400000E-01     1.600000E-01
+                  1.500000E-01     9.000000E-02     0.000000E+00
+  1.000000E+00    0.000000E+00     0.000000E+00     1.300000E+00
+                  6.800000E-01     2.400000E-01     2.000000E-01
+                  1.600000E-01     1.000000E-01     0.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <YB3> -1.000E+00 -6.300E-01 -3.000E-01  0.000E+00  3.000E-01
+                     6.300E-01  1.000E+00                              EOA
+KNUCKLE-POINT <PLAB2> -9.000E+01  0.000E+00  1.039E+01  1.532E+01  1.824E+01
+                       1.973E+01  1.991E+01  2.300E+01  9.000E+01      EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNK-PROP-Y2> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <CYSBK>                                       EOA
+                         <N>
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       9.000E-01
+  1.000E+01       5.000E-01
+  1.500E+01       3.000E-01
+  2.000E+01       1.000E-01
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 30 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <BNK-PROP-Y2>
+INDEPENDENT-VARIABLE    <SHANG>                                        EOA
+                        <DEG>
+CONTENTS-NAMES          <CYSBK>                                        EOA
+                        <N>
+CONTENTS
+ -1.800000E+02    1.000000E+00
+ -1.500000E+02    1.000000E+00
+ -1.350000E+02    0.000000E+00
+ -4.500000E+01    0.000000E+00
+ -3.000000E+01    1.000000E+00
+  3.000000E+01    1.000000E+00
+  4.500000E+01    0.000000E+00
+  1.350000E+02    0.000000E+00
+  1.500000E+02    1.000000E+00
+  1.800000E+02    1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <SHANG> -1.800E+02 -1.500E+02 -1.350E+02 -4.500E+01 -3.000E+01
+                       3.000E+01  4.500E+01  1.350E+02  1.500E+02  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 31 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <BNK-PROP-Y2>
+INDEPENDENT-VARIABLE    <WDBD>                                         EOA
+                        <>
+CONTENTS-NAMES          <CYSBK>                                        EOA
+                        <N>
+CONTENTS
+ -1.000010E+01    0.000000E+00
+ -2.000000E+00    1.353353E-01
+ -1.800000E+00    1.652989E-01
+ -1.600000E+00    2.018965E-01
+ -1.400000E+00    2.465970E-01
+ -1.200000E+00    3.011942E-01
+ -1.000000E+00    3.678794E-01
+ -8.000000E-01    4.493290E-01
+ -6.000000E-01    5.488116E-01
+ -4.000000E-01    6.703200E-01
+ -2.000000E-01    8.187308E-01
+  0.000000E+00    1.000000E+00
+                                                                       EOA
+END-TABLE
+## 
+##                                - 32 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <BNK-PROP-N2>
+MULTIPLY                <FON>                                          EOA
+MULTIPLY                <PRTH2>                                        EOA
+MULTIPLY                <LPP>                                          EOA
+MULTIPLY                <BBLCK>                                        EOA
+MULTIPLY                <DTUCR>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <YB3> <PLAB2>                                  EOA
+                        <>  <DEG>
+CONTENTS-NAMES          <CNSBK>                                        EOA
+                        <Nm>
+CONTENTS
+                 -9.000000E+01     0.000000E+00     1.039000E+01
+                  1.532000E+01     1.824000E+01     1.973000E+01
+                  1.991000E+01     2.300000E+01     9.000000E+01       EOA
+ -1.000000E+00    0.000000E+00     0.000000E+00     2.800000E-01
+                  9.600000E-02     6.000000E-02     3.600000E-02
+                  3.300000E-02     9.200001E-03     0.000000E+00
+ -6.300000E-01    0.000000E+00     0.000000E+00     2.600000E-01
+                  8.400000E-02     4.700000E-02     2.800000E-02
+                  2.400000E-02     9.200001E-03     0.000000E+00
+ -3.000000E-01    0.000000E+00     0.000000E+00     1.100000E-01
+                  6.800001E-02     0.000000E+00     0.000000E+00
+                  2.300000E-03     9.200001E-03     0.000000E+00
+  0.000000E+00    0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00     0.000000E+00
+                  0.000000E+00     0.000000E+00     0.000000E+00
+  3.000000E-01    0.000000E+00     0.000000E+00    -1.100000E-01
+                 -6.800001E-02     0.000000E+00     0.000000E+00
+                 -2.300000E-03    -9.200001E-03     0.000000E+00
+  6.300000E-01    0.000000E+00     0.000000E+00    -2.600000E-01
+                 -8.400000E-02    -4.700000E-02    -2.800000E-02
+                 -2.400000E-02    -9.200001E-03     0.000000E+00
+  1.000000E+00    0.000000E+00     0.000000E+00    -2.800000E-01
+                 -9.600000E-02    -6.000000E-02    -3.600000E-02
+                 -3.300000E-02    -9.200001E-03     0.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <YB3> -1.000E+00 -6.300E-01 -3.000E-01  0.000E+00  3.000E-01
+                     6.300E-01  1.000E+00                              EOA
+KNUCKLE-POINT <PLAB2> -9.000E+01  0.000E+00  1.039E+01  1.532E+01  1.824E+01
+                       1.973E+01  1.991E+01  2.300E+01  9.000E+01      EOA
+END-TABLE
+
+CORRECTION-TABLE         <BNK-PROP-N2> ## added 060619/ot
+INDEPENDENT-VARIABLE     <DTUCR>                                       EOA
+                         < >
+CONTENTS-NAMES           <CNSBK>                                       EOA
+                         <N>
+CONTENTS
+  0.000E+00       1.000E+00
+  5.000E+00       1.000E+00
+  7.000E+00       5.000E-01
+  1.000E+01       3.000E-01
+  1.500E+01       1.000E-01
+  2.000E+01       5.000E-02
+  1.000E+03       1.000E-02
+                                                                      EOA
+KNUCKLE-POINT <DTUCR> 5.0  7.0  10.0  15.0  20.0                      EOA
+END-TABLE
+## 
+##                                - 33 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <BNK-PROP-N2>
+INDEPENDENT-VARIABLE    <SHANG>                                        EOA
+                        <DEG>
+CONTENTS-NAMES          <CNSBK>                                        EOA
+                        <Nm>
+CONTENTS
+ -1.800000E+02    1.000000E+00
+ -1.500000E+02    1.000000E+00
+ -1.350000E+02    0.000000E+00
+ -4.500000E+01    0.000000E+00
+ -3.000000E+01    1.000000E+00
+  3.000000E+01    1.000000E+00
+  4.500000E+01    0.000000E+00
+  1.350000E+02    0.000000E+00
+  1.500000E+02    1.000000E+00
+  1.800000E+02    1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <SHANG> -1.800E+02 -1.500E+02 -1.350E+02 -4.500E+01 -3.000E+01
+                       3.000E+01  4.500E+01  1.350E+02  1.500E+02  1.800E+02
+                                                                       EOA
+END-TABLE
+## 
+##                                - 34 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <BNK-PROP-N2>
+INDEPENDENT-VARIABLE    <WDBD>                                         EOA
+                        <>
+CONTENTS-NAMES          <CNSBK>                                        EOA
+                        <Nm>
+CONTENTS
+ -1.000010E+01    0.000000E+00
+ -2.000000E+00    1.353353E-01
+ -1.800000E+00    1.652989E-01
+ -1.600000E+00    2.018965E-01
+ -1.400000E+00    2.465970E-01
+ -1.200000E+00    3.011942E-01
+ -1.000000E+00    3.678794E-01
+ -8.000000E-01    4.493290E-01
+ -6.000000E-01    5.488116E-01
+ -4.000000E-01    6.703200E-01
+ -2.000000E-01    8.187308E-01
+  0.000000E+00    1.000000E+00
+                                                                       EOA
+END-TABLE
+## 
+##                                - 35 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <NORRCORRY>
+MULTIPLY                <SHYBK>                                        EOA
+MULTIPLY                <FOY>                                          EOA
+MULTIPLY                <WRHD2>                                        EOA
+MULTIPLY                <LPP>                                          EOA
+MULTIPLY                <LPP>                                          EOA
+MULTIPLY                <UPROJ>                                        EOA
+MULTIPLY                <UPROJ>                                        EOA
+DIVIDE                  <THOU>                                         EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <WDBD>                                         EOA
+                        <>
+CONTENTS-NAMES          <CYSBK>                                        EOA
+                        <N>
+CONTENTS
+ -1.000010E+01    0.000000E+00
+ -2.000000E+00    1.353353E-01
+ -1.800000E+00    1.652989E-01
+ -1.600000E+00    2.018965E-01
+ -1.400000E+00    2.465970E-01
+ -1.200000E+00    3.011942E-01
+ -1.000000E+00    3.678794E-01
+ -8.000000E-01    4.493290E-01
+ -6.000000E-01    5.488116E-01
+ -4.000000E-01    6.703200E-01
+ -2.000000E-01    8.187308E-01
+  0.000000E+00    1.000000E+00
+                                                                       EOA
+END-TABLE
+## 
+##                                - 36 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <NORRCORRY>
+INDEPENDENT-VARIABLE    <DETDR>                                        EOA
+                        <>
+CONTENTS-NAMES          <CYSBK>                                        EOA
+                        <N>
+CONTENTS
+ -1.000000E+00    0.000000E+00
+  0.000000E+00    1.000000E+00
+  5.000000E+00    1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <DETDR> -1.000000E+00  0.000000E+00                      EOA
+END-TABLE
+## 
+##                                - 37 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <NORRCORRN>
+MULTIPLY                <SHNBK>                                        EOA
+MULTIPLY                <FON>                                          EOA
+MULTIPLY                <WRHD2>                                        EOA
+MULTIPLY                <LPP>                                          EOA
+MULTIPLY                <LPP>                                          EOA
+MULTIPLY                <LPP>                                          EOA
+MULTIPLY                <UPROJ>                                        EOA
+MULTIPLY                <UPROJ>                                        EOA
+DIVIDE                  <THOU>                                         EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <WDBD>                                         EOA
+                        <>
+CONTENTS-NAMES          <CNSBK>                                        EOA
+                        <Nm>
+CONTENTS
+ -1.000010E+01    0.000000E+00
+ -2.000000E+00    1.353353E-01
+ -1.800000E+00    1.652989E-01
+ -1.600000E+00    2.018965E-01
+ -1.400000E+00    2.465970E-01
+ -1.200000E+00    3.011942E-01
+ -1.000000E+00    3.678794E-01
+ -8.000000E-01    4.493290E-01
+ -6.000000E-01    5.488116E-01
+ -4.000000E-01    6.703200E-01
+ -2.000000E-01    8.187308E-01
+  0.000000E+00    1.000000E+00
+                                                                       EOA
+END-TABLE
+## 
+##                                - 38 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+CORRECTION-TABLE        <NORRCORRN>
+INDEPENDENT-VARIABLE    <DETDR>                                        EOA
+                        <>
+CONTENTS-NAMES          <CNSBK>                                        EOA
+                        <N>
+CONTENTS
+ -1.000000E+00    0.000000E+00
+  0.000000E+00    1.000000E+00
+  5.000000E+00    1.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <DETDR> -1.000000E+00  0.000000E+00                      EOA
+END-TABLE
+## 
+##                                - 39 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <CANALADDRES>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <UWGB>                                         EOA
+                        <>
+CONTENTS-NAMES          <POCA>                                         EOA
+                        <>
+CONTENTS
+ -3.000000E+01    1.000000E+00
+ -6.000000E+00    1.000000E+00
+ -4.600000E+00    7.000000E-01
+ -3.500000E+00    4.000000E-01
+ -2.000000E+00    1.500000E-01
+  0.000000E+00    0.000000E+00
+  2.000000E+00    1.500000E-01
+  3.500000E+00    4.000000E-01
+  4.600000E+00    7.000000E-01
+  6.000000E+00    8.000000E-01
+  3.000000E+01    9.000000E-01
+                                                                       EOA
+KNUCKLE-POINT <UWGB> -3.000E+01 -6.000E+00 -4.600E+00 -3.500E+00 -2.000E+00
+                      0.000E+00  2.000E+00  3.500E+00  4.600E+00  6.000E+00
+                      3.000E+01                                        EOA
+END-TABLE
+## 
+##                                - 40 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) FORCE Technology, DMI
+## ________________________________________________________________________
+
+BASE-TABLE              <XFORCE-SQUAT>
+                                                                       EOA
+INDEPENDENT-VARIABLE    <PTOMX> <TOH>                                  EOA
+                        <>  <>
+CONTENTS-NAMES          <SBEX1>                                        EOA
+                        <>
+CONTENTS
+                  0.000000E+00     5.000000E-01     7.200000E-01
+                  8.300000E-01     1.000000E+00                        EOA
+ -2.000000E+00    1.000000E+00     1.000000E+00     1.000000E+00
+                  1.000000E+00     1.000000E+00
+ -1.000000E+00    1.000000E+00     1.000000E+00     1.000000E+00
+                  1.000000E+00     1.000000E+00
+ -5.000000E-01    1.000000E+00     1.000000E+00     1.000000E+00
+                  1.000000E+00     1.000000E+00
+  0.000000E+00    1.000000E+00     1.000000E+00     1.000000E+00
+                  1.000000E+00     1.500000E+00
+  7.800000E-01    1.000000E+00     1.000000E+00     1.000000E+00
+                  1.000000E+00     2.500000E+00
+  9.900001E-01    1.000000E+00     1.000000E+00     1.000000E+00
+                  4.000000E+00     4.000000E+00
+  2.000000E+00    1.000000E+00     1.000000E+00     1.000000E+00
+                  4.000000E+00     4.000000E+00
+                                                                       EOA
+KNUCKLE-POINT <PTOMX> -2.000E+00 -1.000E+00 -5.000E-01  0.000E+00  7.800E-01
+                       2.000E+00                            EOA
+KNUCKLE-POINT <TOH>  0.000E+00  5.000E-01  7.200E-01  8.300E-01  1.000E+00
+                                                                       EOA
+END-TABLE
+END-LUMP
+END

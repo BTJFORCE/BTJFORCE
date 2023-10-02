@@ -1,0 +1,36 @@
+FILE radar rdr 1.00
+
+
+SCANNER
+    NAME            <1(X)>
+    SPEED                  25
+    POSITION              59.885        1.423       24.577
+    MODEL           <STNAtlas> <9600 x-band>
+    VISUAL-SCALE           1.000 
+
+SCANNER
+    NAME            <2(S)>
+    SPEED                  25
+    POSITION              60.051       -1.181       25.745
+    MODEL           <STNAtlas> <9600 s-band>
+    VISUAL-SCALE           1.000 
+
+SCANNER
+    NAME            <3(X)>
+    SPEED                  25
+    POSITION             -48.000        0.000       21.782
+    MODEL           <STNAtlas> <9600 x-band>
+    VISUAL-SCALE           1.000 
+
+REFLECTION-CURVE
+    0.0 0.10
+   45.0 0.25
+   90.0 1.00
+  135.0 0.25
+  180.0 0.10
+  225.0 0.25
+  270.0 1.00
+  315.0 0.25
+  360.0 0.10
+EOA
+END-FILE

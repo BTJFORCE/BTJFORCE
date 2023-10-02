@@ -1,0 +1,74 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+HAWSER-FORCE 10996
+1                   ## Hawser TYPE CODE (0=NONE) ?
+MATHEMATICAL-MODEL-CODE
+802
+<Standard Hawser>   ## Hawser winch description in haks
+NORMAL
+  5.000585E+06      ## Mooring line break load (N)
+  1.000000E-02      ## Loss coefficient
+  1.000000E+03      ## Mooring line max length (m)
+LOSS-MODEL
+2                   ## Loss model
+##USE-OTHER-FORCE
+WINCH
+BASIC-WINCH-DATA
+  1.000000E+00      ## Winch max speed m/s
+  1.000000E-01      ## Winch min speed frac. of max
+  2.000000E+05      ## Winch maximum power at maximum speed
+  1.000000E-06   1.000000E+00 
+                    ## Prop. integral value for const tension winch
+MAX-WINCH-FORCE
+  2.000000E+06      ## Max Winch force
+LENGTH-SCALE-CONTROLLER
+0                   ## Length scale controller
+CONSTANT-TENSION-DEADBAND
+  4.000000E+04      ## Constant tension deadband
+SETPOINT-TOLERANCE
+  2.000000E+04      ## Setpoint tolerance
+END-WINCH
+TABLE-LUMP
+FORCE-TABLE
+## 
+##                                - 2 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+##  19 September 2011 At 16:00:00 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+BASE-TABLE              <HAWSER-FORCE>
+MULTIPLY                <BRLOA>                                        EOA
+                                                                       EOA
+INDEPENDENT-VARIABLE    <ELONG>                                        EOA
+                        <>
+CONTENTS-NAMES          <FHAWS>                                        EOA
+                        <>
+CONTENTS
+ -1.000000E+00    0.000000E+00
+  0.000000E+00    0.000000E+00
+  2.500000E-02    3.000000E-02
+  5.000000E-02    7.000000E-02
+  7.500000E-02    1.300000E-01
+  1.000000E-01    2.200000E-01
+  1.250000E-01    3.100000E-01
+  1.500000E-01    4.600000E-01
+  1.750000E-01    7.200000E-01
+  2.000000E-01    8.900002E-01
+  2.250000E-01    1.000000E+00
+  1.000000E+00    1.100000E+00
+                                                                       EOA
+KNUCKLE-POINT <ELONG>  0.000000E+00  2.250000E-01                      EOA
+END-TABLE
+END-LUMP
+END-LUMPS
+END

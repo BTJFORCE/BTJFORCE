@@ -1,0 +1,18 @@
+## 
+##                                - 1 -
+## ________________________________________________________________________
+## Ship : 3789
+## Danish Maritime Institute
+## 30 September 2011 At 14:47:20 By gev
+## MSdat v. 0.107(NT) (c) Danish Maritime Institute
+## ________________________________________________________________________
+
+ACCUMULATOR 10301
+1                   ## Accumulator TYPE CODE (0=NONE) ?
+MATHEMATICAL-MODEL-CODE
+800
+  3.000000E+06      ## Maximum charge (SELECT-CASEin p rate vector)
+  2.776700E-04   5.553300E-04 
+                    ## Pump rate Leak rate
+  9.667000E-01      ## Hysteresis limit
+END

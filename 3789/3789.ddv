@@ -1,0 +1,178 @@
+FILE WHEEL DDV 1.00 
+SHIP 3789 
+
+PROPELLER 
+  INTERFACE            1 
+  POSITION             -75.525  0.0 
+  NAME                 <CPP> 
+  GEAR-RATIO           3.658540E+00 
+  MAX-REV              6.000000E+02 
+  MAX-PITCH            1.200000E+00   -6.666667E-01 
+
+RUDDER 
+  INTERFACE            1 
+  POSITION            -78.225  0
+  NAME                 <Center>
+  MAX-RUDDER           3.500000E+01 
+ 
+WHEEL
+  MODEL DMI
+  NAME  <Rudder>
+  LINK  1 EOA
+
+THROTTLE
+  MODE DMI
+  NAME    <Engine> 
+  LINK 1  EOA 
+
+AZIMUTH-THRUSTER
+ INTERFACE          1
+ POSITION                      -81.19   7.69
+ NAME <Starboard>
+ GEAR-RATIO       4.724409E+00
+ MAX-REV          1.200000E+03
+ MAX-PITCH        1.030000E+00 1.000000E+00
+ MAX-AZIMUTH -180. 180.
+
+JOYSTICK
+ AXIS 2
+ MODEL KAMEWA
+ LINK 1 EOA
+
+AZIMUTH-THRUSTER
+ INTERFACE          2
+ POSITION                      -81.19  -7.69
+ NAME <Port>
+ GEAR-RATIO       4.724409E+00
+ MAX-REV          1.200000E+03
+ MAX-PITCH        1.030000E+00 1.000000E+00
+ MAX-AZIMUTH -180. 180.
+
+JOYSTICK
+ AXIS 2
+ MODEL KAMEWA
+ LINK 2 EOA	
+
+
+THRUSTER FORE 
+  INTERFACE 		1
+  POSITION 		  68.575 0
+  NAME 			  <Bow 1>
+  MAX-THRUST	  1.834240E+05
+
+
+THRUSTER-HANDLE FORE
+  MODEL			DMI
+  NAME			<Bow 1>
+  LINK			1 EOA
+
+THRUSTER FORE
+  INTERFACE 		2
+  POSITION 		  64.275 0
+  NAME 			  <Bow 2>
+  MAX-THRUST	  1.834240E+05
+  
+THRUSTER-HANDLE FORE
+  MODEL			DMI
+  NAME			<Bow 2>
+  LINK			2 EOA  
+  
+ENGINE
+  INTERFACE 1
+  NAME    <Engine stbd AZI> 
+
+ENGINE
+  INTERFACE 2
+  NAME    <Engine port AZI> 
+
+ENGINE
+  INTERFACE 3
+  NAME    <Engine CPP>
+ 
+ 
+COMBINATOR
+  INTERFACE 1
+  NAME    <Combinator AZI SB> 
+  
+COMBINATOR
+  INTERFACE 2
+  NAME    <Combinator AZI PO>
+
+COMBINATOR
+  INTERFACE 3
+  NAME    <Combinator CPP>  
+
+GENERATOR
+ INTERFACE   1
+ NAME <Generator 1>
+GENERATOR
+ INTERFACE   2
+ NAME <Generator 2>
+GENERATOR
+ INTERFACE   3
+ NAME <Generator 3>
+GENERATOR
+ INTERFACE   4
+ NAME <Generator 4>
+GENERATOR
+ INTERFACE   5
+ NAME <Generator 5>
+## CVE thinks this GEN 6 should be removed since engine file only includes five GEN 
+## symbolizing 3 Gens and two engines which has been confirmed by customer (Allan Bak)
+##GENERATOR 
+## INTERFACE   6
+## NAME <Generator 6>
+ 
+FIRE-ALARM
+ INTERFACE 1
+ NAME <Main Engine room>
+FIRE-ALARM
+ INTERFACE 2
+ NAME <Aux. Engine Room>
+FIRE-ALARM
+ INTERFACE 3
+ NAME <Separator Room>
+FIRE-ALARM
+ INTERFACE 4
+ NAME <Crew Quarters, Section A>
+FIRE-ALARM
+ INTERFACE 5
+ NAME <Crew Quarters, Section B>
+FIRE-ALARM
+ INTERFACE 6
+ NAME <Crewmess and Galley>
+FIRE-ALARM
+ INTERFACE 7
+ NAME <Deck F Hall and Main Galley>
+FIRE-ALARM
+ INTERFACE 8
+ NAME <Deck E Passenger Quarters, Section A>
+FIRE-ALARM
+ INTERFACE 9
+ NAME <Deck E Passenger Quarters, Section B>
+FIRE-ALARM
+ INTERFACE 10
+ NAME <Deck D Passenger Quarters, Section A>
+FIRE-ALARM
+ INTERFACE 11
+ NAME <Deck D Passenger Quarters, Section B>
+FIRE-ALARM
+ INTERFACE 12
+ NAME <Deck C Passenger Quarters, Section A>
+FIRE-ALARM
+ INTERFACE 13
+ NAME <Deck C Passenger Quarters, Section B>
+FIRE-ALARM
+ INTERFACE 14
+ NAME <Deck B Passenger Quarters, Section A>
+FIRE-ALARM
+ INTERFACE 15
+ NAME <Deck B Passenger Quarters, Section B>
+FIRE-ALARM
+ INTERFACE 16
+ NAME <Deck E Passenger Quarters, Section B>
+
+END-SHIP
+
+END-FILE
+

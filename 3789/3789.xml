@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+ Source Code location: $/SimFlex Data/src/data_SimFlex4/ships/3789
+ File                : 3789.xml
+ Signature           : jko
+ Creation            : 20110202
+ Usage               : Symbol names in 'use' tag are defined in u:/setup/DeviceControl/Configuration.xml
+-->
+<!-- Device Control -->
+<Ship type="3789">
+  <DeviceControls>
+    <DeviceControl device="Engine" control="emergency_stop" DisplayText="Stop. " GroupeNr="1">
+      <index id="1" Name="SB Aft" ButtonNr="2">1</index>
+      <index id="2" Name="PO Aft" ButtonNr="1">2</index>
+      <index id="3" Name="SB Fore" ButtonNr="4">3</index>
+      <index id="4" Name="PO Fore" ButtonNr="3">4</index>
+    </DeviceControl>
+    <DeviceControl device="Engine" control="emergency_manoeuvre" DisplayText="Ems Maneouvre">
+      <synchronize cardinality="4">Use index one to control all engine devices</synchronize>
+    </DeviceControl>
+  </DeviceControls>
+</Ship>
